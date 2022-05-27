@@ -470,14 +470,34 @@
 // }
 // #endregion
 
-// #region - Max
+// #region - MaxProfit (Kadane's Algorithm)
 // function solution(A) {
 //   let answer = 0;
+//   let minPrice = A[0];
 
-//   for (let i = 0; i < A.length - 1; i++) {
-//     for (let l = i + 1; l < A.length; l++) {
-//       answer = Math.max(answer, A[l] - A[i]);
-//     }
+//   for (let i = 0; i < A.length; i++) {
+//     const curPrice = A[i];
+
+//     minPrice = Math.min(minPrice, curPrice);
+
+//     const curProfit = curPrice - minPrice;
+
+//     answer = Math.max(answer, curProfit);
+//   }
+
+//   return answer;
+// }
+// #endregion
+
+// #region - MaxSliceSum (Kadane's Algorithm)
+// function solution(A) {
+//   let accNum = 0;
+//   let answer = Number.MIN_SAFE_INTEGER;
+
+//   for (let i = 0; i < A.length; i++) {
+//     accNum = Math.max(A[i], accNum + A[i]);
+
+//     answer = Math.max(answer, accNum);
 //   }
 
 //   return answer;
