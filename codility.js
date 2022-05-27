@@ -425,45 +425,61 @@
 // #endregion
 
 // #region - EquiLeader
-function solution(A) {
-  let answer = 0;
-  let rightobj = A.reduce(
-    (acc, cur) => ({
-      ...acc,
-      [cur]: acc[cur] ? acc[cur] + 1 : 1,
-    }),
-    {}
-  );
-  let rightLength = A.length;
+// function solution(A) {
+//   const loopCount = A.length;
+//   let answer = 0;
 
-  let leftobj = {};
-  let leftLength = 0;
+//   let rightobj = {};
+//   let leftobj = {};
 
-  let leftLeader = 0;
-  let leftCount = 0;
+//   for (let i = 0; i < loopCount; i++) {
+//     const cur = A[i];
 
-  for (let i = 0; i < A.length; i++) {
-    const cur = A[i];
+//     rightobj[cur] = (rightobj[cur] || 0) + 1;
+//   }
 
-    rightobj[cur] = rightobj[cur] - 1;
-    rightLength -= 1;
+//   let leftLength = 0;
+//   let rightLength = A.length;
 
-    leftobj[cur] = (leftobj[cur] || 0) + 1;
-    leftLeader += 1;
+//   let leftLeader = 0;
+//   let leftLeaderCount = 0;
 
-    if (leftobj[cur] > leftCount) {
-      leftLeader = cur;
-      leftCount = leftobj[cur];
-    }
+//   for (let i = 0; i < loopCount; i++) {
+//     const cur = A[i];
 
-    if (
-      rightobj[leftLeader] > parseInt(rightLength / 2) &&
-      leftCount > parseInt(leftLength / 2)
-    ) {
-      answer += 1;
-    }
-  }
+//     rightobj[cur] -= 1;
+//     rightLength -= 1;
 
-  return answer;
-}
+//     leftobj[cur] = (leftobj[cur] || 0) + 1;
+//     leftLength += 1;
+
+//     if (leftobj[cur] > leftLeaderCount) {
+//       leftLeader = cur;
+//       leftLeaderCount = leftobj[cur];
+//     }
+
+//     if (
+//       rightobj[leftLeader] > parseInt(rightLength / 2, 10) &&
+//       leftLeaderCount > parseInt(leftLength / 2, 10)
+//     ) {
+//       answer += 1;
+//     }
+//   }
+
+//   return answer;
+// }
+// #endregion
+
+// #region - Max
+// function solution(A) {
+//   let answer = 0;
+
+//   for (let i = 0; i < A.length - 1; i++) {
+//     for (let l = i + 1; l < A.length; l++) {
+//       answer = Math.max(answer, A[l] - A[i]);
+//     }
+//   }
+
+//   return answer;
+// }
 // #endregion
