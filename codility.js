@@ -550,3 +550,17 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - MinPerimeterRectangle
+// function solution(N) {
+//   const centerNum = Math.floor(Math.sqrt(N));
+
+//   for (let i = centerNum; 0 < i; i--) {
+//     if (N % i === 0) {
+//       const otherNum = N / i;
+
+//       return (otherNum + i) * 2;
+//     }
+//   }
+// }
+// #endregion
