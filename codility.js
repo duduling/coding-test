@@ -529,3 +529,24 @@
 //   return maxSum;
 // }
 // #endregion
+
+// #region - CountFactors
+// function solution(N) {
+//   const centerNum = Math.sqrt(N);
+//   let answer = 0;
+
+//   for (let i = 1; i < centerNum; i++) {
+//     if (N % i === 0) {
+//       answer += 1;
+//     }
+//   }
+
+//   answer *= 2;
+
+//   if (N % centerNum === 0) {
+//     answer += 1;
+//   }
+
+//   return answer;
+// }
+// #endregion
