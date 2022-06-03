@@ -503,3 +503,29 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - MaxDoubleSliceSum (Kadane's Algorithm)
+// function solution(A) {
+//   const listLength = A.length;
+
+//   const headSum = new Array(A.length).fill(0);
+
+//   for (let i = 1; i < listLength - 1; i++) {
+//     headSum[i] = Math.max(0, headSum[i - 1] + A[i]);
+//   }
+
+//   const tailSum = new Array(A.length).fill(0);
+
+//   for (let i = listLength - 2; i >= 1; i--) {
+//     tailSum[i] = Math.max(0, tailSum[i + 1] + A[i]);
+//   }
+
+//   let maxSum = 0;
+
+//   for (let i = 1; i < listLength - 1; i++) {
+//     maxSum = Math.max(maxSum, headSum[i - 1] + tailSum[i + 1]);
+//   }
+
+//   return maxSum;
+// }
+// #endregion
