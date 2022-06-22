@@ -79,3 +79,25 @@
 //   return firstIdx === firstCharacters.length;
 // }
 // #endregion
+
+// #region - Sliding Window - maxSubarraySum
+// function maxSubarraySum(arr, limitNum) {
+//   if (arr.length < limitNum) return null;
+
+//   let maximumNumSum = 0;
+
+//   for (let i = 0; i < limitNum; i++) {
+//     maximumNumSum += arr[i];
+//   }
+
+//   for (let i = limitNum, curNumSum = maximumNumSum; i < arr.length; i++) {
+//     curNumSum += arr[i] - arr[i - limitNum];
+
+//     if (maximumNumSum < curNumSum) {
+//       maximumNumSum = curNumSum;
+//     }
+//   }
+
+//   return maximumNumSum;
+// }
+// #endregion
