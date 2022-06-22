@@ -38,3 +38,24 @@
 //   return originalArr.length !== cleanOverlapSet.size;
 // }
 // #endregion
+
+// #region - Multiple Pointers - averagePair
+// function averagePair(list, avgValue) {
+//   let smallNumIdx = 0;
+//   let bigNumIdx = list.length - 1;
+
+//   while (smallNumIdx < bigNumIdx) {
+//     const tempAvgValue = (list[smallNumIdx] + list[bigNumIdx]) / 2;
+
+//     if (tempAvgValue === avgValue) {
+//       return true;
+//     } else if (tempAvgValue < avgValue) {
+//       smallNumIdx += 1;
+//     } else if (tempAvgValue > avgValue) {
+//       bigNumIdx -= 1;
+//     }
+//   }
+
+//   return false;
+// }
+// #endregion
