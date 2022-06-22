@@ -59,3 +59,23 @@
 //   return false;
 // }
 // #endregion
+
+// #region - Multiple Pointers - isSubsequence
+// function isSubsequence(firstCharacters, secondCharacters) {
+//   let firstIdx = 0;
+//   let secondIdx = 0;
+
+//   for (
+//     firstIdx < firstCharacters.length;
+//     secondIdx < secondCharacters.length;
+
+//   ) {
+//     if (firstCharacters[firstIdx] === secondCharacters[secondIdx]) {
+//       firstIdx++;
+//     }
+//     secondIdx++;
+//   }
+
+//   return firstIdx === firstCharacters.length;
+// }
+// #endregion
