@@ -29,3 +29,12 @@
 //   return JSON.stringify(convertObjA) === "{}";
 // }
 // #endregion
+
+// #region - Frequency Counter / Multiple Pointers - areThereDuplicates
+// function areThereDuplicates() {
+//   const originalArr = Object.values(arguments);
+//   const cleanOverlapSet = new Set(originalArr);
+
+//   return originalArr.length !== cleanOverlapSet.size;
+// }
+// #endregion
