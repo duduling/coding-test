@@ -81,17 +81,17 @@
 // #endregion
 
 // #region - Sliding Window - maxSubarraySum
-// function maxSubarraySum(arr, limitNum) {
-//   if (arr.length < limitNum) return null;
+// function maxSubarraySum(inputArr, limitNum) {
+//   if (inputArr.length < limitNum) return null;
 
 //   let maximumNumSum = 0;
 
 //   for (let i = 0; i < limitNum; i++) {
-//     maximumNumSum += arr[i];
+//     maximumNumSum += inputArr[i];
 //   }
 
-//   for (let i = limitNum, curNumSum = maximumNumSum; i < arr.length; i++) {
-//     curNumSum += arr[i] - arr[i - limitNum];
+//   for (let i = limitNum, curNumSum = maximumNumSum; i < inputArr.length; i++) {
+//     curNumSum += inputArr[i] - inputArr[i - limitNum];
 
 //     if (maximumNumSum < curNumSum) {
 //       maximumNumSum = curNumSum;
