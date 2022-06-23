@@ -101,3 +101,27 @@
 //   return maximumNumSum;
 // }
 // #endregion
+
+// #region - Sliding Window - minSubArrayLen
+// function minSubArrayLen(numList, limitSum) {
+//   let startIdx = 0;
+//   let endIdx = 0;
+//   let bestAnswer = numList.length + 1;
+//   let curTotalSum = 0;
+
+//   while (startIdx <= numList.length) {
+//     if (curTotalSum < limitSum && endIdx < numList.length) {
+//       curTotalSum += numList[endIdx];
+//       endIdx++;
+//     } else if (limitSum <= curTotalSum) {
+//       bestAnswer = Math.min(bestAnswer, endIdx - startIdx);
+//       curTotalSum -= numList[startIdx];
+//       startIdx++;
+//     } else {
+//       break;
+//     }
+//   }
+
+//   return bestAnswer === numList.length + 1 ? 0 : bestAnswer;
+// }
+// #endregion
