@@ -125,3 +125,25 @@
 //   return bestAnswer === numList.length + 1 ? 0 : bestAnswer;
 // }
 // #endregion
+
+// #region - Sliding Window - findLongestSubstring
+// function findLongestSubstring(str) {
+//   let answer = 0;
+//   let cacheObj = {};
+//   let initStartIdx = 0;
+
+//   for (let i = 0; i < str.length; i++) {
+//     const curCharacter = str[i];
+
+//     if (cacheObj[curCharacter] > -1) {
+//       // 기존의 Init Start Index가 더 작을 수 있음
+//       initStartIdx = Math.max(initStartIdx, cacheObj[curCharacter] + 1);
+//     }
+
+//     cacheObj[curCharacter] = i;
+//     answer = Math.max(answer, i - initStartIdx + 1);
+//   }
+
+//   return answer;
+// }
+// #endregion
