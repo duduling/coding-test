@@ -147,3 +147,12 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - power
+// function power(n, count) {
+//   if (0 === count) return 1;
+
+//   return n * power(n, --count);
+// }
+// #endregion
+
