@@ -155,4 +155,11 @@
 //   return n * power(n, --count);
 // }
 // #endregion
-
+
+// #region - factorial
+// function factorial(num) {
+//   if (0 < num) return num * factorial(--num);
+
+//   return 1;
+// }
+// #endregion
