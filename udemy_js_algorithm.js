@@ -163,3 +163,13 @@
 //   return 1;
 // }
 // #endregion
+
+// #region - productOfArray
+// function productOfArray(arr) {
+//   if (arr.length > 0) {
+//     return arr.pop() * productOfArray(arr);
+//   }
+
+//   return 1;
+// }
+// #endregion
