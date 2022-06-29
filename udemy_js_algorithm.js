@@ -199,3 +199,13 @@
 //   return reverse(str.slice(1)) + str[0];
 // }
 // #endregion
+
+// #region - isPalindrome
+// function isPalindrome(str) {
+//   if (str.length <= 1) return true;
+
+//   return str[0] === str[str.length - 1]
+//     ? isPalindrome(str.slice(1, str.length - 1))
+//     : false;
+// }
+//#endregion
