@@ -209,3 +209,11 @@
 //     : false;
 // }
 //#endregion
+
+// #region - someRecursive
+// function someRecursive(arr, func) {
+//   if (arr.length === 0) return false;
+
+//   return func(arr.pop()) ? true : someRecursive(arr, func);
+// }
+//#endregion
