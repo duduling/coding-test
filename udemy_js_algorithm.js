@@ -191,3 +191,11 @@
 //   return fib(num - 1) + fib(num - 2);
 // }
 // #endregion
+
+// #region - reverse
+// function reverse(str) {
+//   if (str === "") return "";
+
+//   return reverse(str.slice(1)) + str[0];
+// }
+// #endregion
