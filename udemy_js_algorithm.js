@@ -194,7 +194,7 @@
 
 // #region - reverse
 // function reverse(str) {
-//   if (str === "") return "";
+//   if (str <= 1) return str;
 
 //   return reverse(str.slice(1)) + str[0];
 // }
@@ -215,5 +215,36 @@
 //   if (arr.length === 0) return false;
 
 //   return func(arr.pop()) ? true : someRecursive(arr, func);
+// }
+//#endregion
+
+// #region - someRecursive
+// function flatten(arr) {
+//   const answer = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (Number.isInteger(arr[i])) {
+//       answer.push(arr[i]);
+//     } else {
+//       answer.push(...flatten(arr[i]));
+//     }
+//   }
+
+//   return answer;
+// }
+
+// #region - flatten
+// function flatten(arr) {
+//   const answer = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (Number.isInteger(arr[i])) {
+//       answer.push(arr[i]);
+//     } else {
+//       answer.push(...flatten(arr[i]));
+//     }
+//   }
+
+//   return answer;
 // }
 //#endregion
