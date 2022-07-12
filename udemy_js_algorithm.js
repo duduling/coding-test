@@ -281,3 +281,19 @@
 //   return answer;
 // }
 //#endregion
+
+// #region - collectStrings
+// function collectStrings(obj) {
+//   const answer = [];
+
+//   for (const key in obj) {
+//     if (typeof obj[key] === "object") {
+//       answer.push(...collectStrings(obj[key]));
+//     } else {
+//       answer.push(obj[key]);
+//     }
+//   }
+
+//   return answer;
+// }
+//#endregion
