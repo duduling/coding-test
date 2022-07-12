@@ -232,19 +232,29 @@
 
 //   return answer;
 // }
+//#endregion
 
-// #region - flatten
-// function flatten(arr) {
-//   const answer = [];
+// #region - capitalizeFirst
+// function capitalizeFirst(arr, answer = []) {
+//   answer.push(`${arr[0][0].toUpperCase()}${arr[0].slice(1)}`);
 
-//   for (let i = 0; i < arr.length; i++) {
-//     if (Number.isInteger(arr[i])) {
-//       answer.push(arr[i]);
-//     } else {
-//       answer.push(...flatten(arr[i]));
-//     }
+//   if (arr.length > 1) {
+//     capitalizeFirst(arr.slice(1), answer);
 //   }
 
+//   return answer;
+// }
+//#endregion
+
+// #region - nestedEvenSum
+// function nestedEvenSum(obj, answer = 0) {
+//   for (key in obj) {
+//     if (typeof obj[key] === "number" && obj[key] % 2 === 0) {
+//       answer += obj[key];
+//     } else if (typeof obj[key] === "object") {
+//       answer += nestedEvenSum(obj[key]);
+//     }
+//   }
 //   return answer;
 // }
 //#endregion
