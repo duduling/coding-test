@@ -248,7 +248,7 @@
 
 // #region - nestedEvenSum
 // function nestedEvenSum(obj, answer = 0) {
-//   for (key in obj) {
+//   for (const key in obj) {
 //     if (typeof obj[key] === "number" && obj[key] % 2 === 0) {
 //       answer += obj[key];
 //     } else if (typeof obj[key] === "object") {
@@ -260,7 +260,24 @@
 //#endregion
 
 // #region - capitalizeWords
-function capitalizeWords(arr) {
-  return arr[0] ? [arr[0].toUpperCase(), ...capitalizeWords(arr.slice(1))] : [];
-}
+// function capitalizeWords(arr) {
+//   return arr[0] ? [arr[0].toUpperCase(), ...capitalizeWords(arr.slice(1))] : [];
+// }
+//#endregion
+
+// #region - stringifyNumbers
+// function stringifyNumbers(obj) {
+//   let answer = {};
+
+//   for (const key in obj) {
+//     if (typeof obj[key] === "number") {
+//       answer[key] = String(obj[key]);
+//     } else if (typeof obj[key] === "object" && !Array.isArray(obj[key])) {
+//       answer[key] = stringifyNumbers(obj[key]);
+//     } else {
+//       answer[key] = obj[key];
+//     }
+//   }
+//   return answer;
+// }
 //#endregion
