@@ -258,3 +258,9 @@
 //   return answer;
 // }
 //#endregion
+
+// #region - capitalizeWords
+function capitalizeWords(arr) {
+  return arr[0] ? [arr[0].toUpperCase(), ...capitalizeWords(arr.slice(1))] : [];
+}
+//#endregion
