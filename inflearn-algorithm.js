@@ -178,15 +178,29 @@
 // #endregion
 
 // #region - Ch.01 - 16. 중복문자제거
-function solution(str) {
-  const cacheObj = {};
+// function solution(str) {
+//   const cacheObj = {};
 
-  for (let i = 0; i < str.length; i++) {
-    const curChar = str[i];
+//   for (let i = 0; i < str.length; i++) {
+//     const curChar = str[i];
 
-    if (!cacheObj[curChar]) cacheObj[curChar] = true;
-  }
+//     if (!cacheObj[curChar]) cacheObj[curChar] = true;
+//   }
 
-  return Object.keys(cacheObj).join("");
-}
+//   return Object.keys(cacheObj).join("");
+// }
+// #endregion
+
+// #region - Ch.01 - 17. 중복단어제거
+// function solution(arr) {
+//   const cacheObj = {};
+
+//   for (let i = 0; i < arr.length; i++) {
+//     const curChar = arr[i];
+
+//     if (!cacheObj[curChar]) cacheObj[curChar] = true;
+//   }
+
+//   return Object.keys(cacheObj);
+// }
 // #endregion
