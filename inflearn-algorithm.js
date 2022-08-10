@@ -104,15 +104,28 @@
 // #endregion
 
 // #region - Ch.01 - 10. 문자 찾기
-function solution(str, char) {
-  let count = 0;
+// function solution(str, char) {
+//   let count = 0;
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === char) count++;
+//   }
+
+//   return count;
+// }
+// #endregion
+
+// #region - Ch.01 - 11. 대문자 찾기
+function solution(str) {
+  let answer = 0;
 
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === char) count++;
+    const convertAsciiCode = str[i].charCodeAt();
+    if (65 <= convertAsciiCode && convertAsciiCode <= 90) answer++;
   }
 
-  return count;
+  return answer;
 }
 // #endregion
 
-console.log(solution("COMPUTERPROGRAMMING", "R"));
+console.log(solution("KoreaTimeGood"));
