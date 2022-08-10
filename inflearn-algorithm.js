@@ -72,22 +72,34 @@
 // #endregion
 
 // #region - Ch.01 - 08. 일곱 난쟁이
-function solution(arr) {
-  const dwarfList = [...arr];
-  const overNum = dwarfList.reduce((acc, cur) => acc + cur, 0) - 100;
+// function solution(arr) {
+//   const dwarfList = [...arr];
+//   const overNum = dwarfList.reduce((acc, cur) => acc + cur, 0) - 100;
 
-  for (let i = 0; i < arr.length; i++) {
-    const firstDwarf = dwarfList[i];
-    for (let j = i + 1; j < arr.length; j++) {
-      const secondDwarf = dwarfList[j];
+//   for (let i = 0; i < arr.length; i++) {
+//     const firstDwarf = dwarfList[i];
+//     for (let j = i + 1; j < arr.length; j++) {
+//       const secondDwarf = dwarfList[j];
 
-      if (firstDwarf + secondDwarf === overNum) {
-        dwarfList.splice(i, 1);
-        dwarfList.splice(j, 1);
-      }
-    }
+//       if (firstDwarf + secondDwarf === overNum) {
+//         dwarfList.splice(i, 1);
+//         dwarfList.splice(j, 1);
+//       }
+//     }
+//   }
+//   return dwarfList;
+// }
+// #endregion
+
+// #region - Ch.01 - 09. A를 #으로
+function solution(str) {
+  let answer = "";
+
+  for (let i = 0; i < str.length; i++) {
+    answer += str[i] === "A" ? "#" : str[i];
   }
-  return dwarfList;
+
+  return answer;
 }
 // #endregion
 
