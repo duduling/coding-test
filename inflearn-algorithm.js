@@ -116,16 +116,33 @@
 // #endregion
 
 // #region - Ch.01 - 11. 대문자 찾기
+// function solution(str) {
+//   let answer = 0;
+
+//   for (let i = 0; i < str.length; i++) {
+//     const convertAsciiCode = str[i].charCodeAt();
+//     if (65 <= convertAsciiCode && convertAsciiCode <= 90) answer++;
+//   }
+
+//   return answer;
+// }
+// #endregion
+
+// #region - Ch.01 - 12. 대문자로 통일
 function solution(str) {
-  let answer = 0;
+  let answer = "";
 
   for (let i = 0; i < str.length; i++) {
     const convertAsciiCode = str[i].charCodeAt();
-    if (65 <= convertAsciiCode && convertAsciiCode <= 90) answer++;
+
+    answer +=
+      97 <= convertAsciiCode && convertAsciiCode <= 122
+        ? String.fromCharCode(convertAsciiCode - 32)
+        : str[i];
   }
 
   return answer;
 }
 // #endregion
 
-console.log(solution("KoreaTimeGood"));
+console.log(solution("ItisTimeToStudy"));
