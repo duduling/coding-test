@@ -62,14 +62,33 @@
 // #endregion
 
 // #region - Ch.01 - 07. 10부제
-function solution(n, arr) {
-  return arr.reduce((acc, cur) => {
-    if (cur % 10 === n) acc += 1;
+// function solution(n, arr) {
+//   return arr.reduce((acc, cur) => {
+//     if (cur % 10 === n) acc += 1;
 
-    return acc;
-  }, 0);
+//     return acc;
+//   }, 0);
+// }
+// #endregion
+
+// #region - Ch.01 - 08. 일곱 난쟁이
+function solution(arr) {
+  const dwarfList = [...arr];
+  const overNum = dwarfList.reduce((acc, cur) => acc + cur, 0) - 100;
+
+  for (let i = 0; i < arr.length; i++) {
+    const firstDwarf = dwarfList[i];
+    for (let j = i + 1; j < arr.length; j++) {
+      const secondDwarf = dwarfList[j];
+
+      if (firstDwarf + secondDwarf === overNum) {
+        dwarfList.splice(i, 1);
+        dwarfList.splice(j, 1);
+      }
+    }
+  }
+  return dwarfList;
 }
 // #endregion
 
-console.log(solution(3, [25, 23, 11, 47, 53, 17, 33]));
-console.log(solution(0, [12, 20, 54, 30, 87, 91, 30]));
+console.log(solution([20, 7, 23, 19, 10, 15, 25, 8, 13]));
