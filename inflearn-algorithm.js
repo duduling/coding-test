@@ -38,4 +38,11 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Ch.01 - 05. 최솟값 구하기
+function solution(arr) {
+  return arr.reduce((a, b) => (a > b ? b : a), Number.MAX_SAFE_INTEGER);
+}
 // #endregion
+
+console.log(solution([5, 3, 7, 11, 2, 15, 17]));
