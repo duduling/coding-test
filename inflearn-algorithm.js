@@ -129,20 +129,38 @@
 // #endregion
 
 // #region - Ch.01 - 12. 대문자로 통일
+// function solution(str) {
+//   let answer = "";
+
+//   for (let i = 0; i < str.length; i++) {
+//     const convertAsciiCode = str[i].charCodeAt();
+
+//     answer +=
+//       97 <= convertAsciiCode && convertAsciiCode <= 122
+//         ? String.fromCharCode(convertAsciiCode - 32)
+//         : str[i];
+//   }
+
+//   return answer;
+// }
+// #endregion
+
+// #region - Ch.01 - 12. 대소문자 변환
 function solution(str) {
   let answer = "";
 
   for (let i = 0; i < str.length; i++) {
     const convertAsciiCode = str[i].charCodeAt();
 
-    answer +=
-      97 <= convertAsciiCode && convertAsciiCode <= 122
-        ? String.fromCharCode(convertAsciiCode - 32)
-        : str[i];
+    if (65 <= convertAsciiCode && convertAsciiCode <= 90) {
+      answer += String.fromCharCode(convertAsciiCode + 32);
+    } else if (97 <= convertAsciiCode && convertAsciiCode <= 122) {
+      answer += String.fromCharCode(convertAsciiCode - 32);
+    }
   }
 
   return answer;
 }
 // #endregion
 
-console.log(solution("ItisTimeToStudy"));
+console.log(solution("StuDY"));
