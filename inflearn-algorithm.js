@@ -1,4 +1,4 @@
-// #region - Ch.01 - 01.세 수 중 최솟값
+// #region - Ch.01 - 01. 세 수 중 최솟값
 // function solution(a, b, c) {
 //   let answer = a;
 
@@ -9,7 +9,7 @@
 // }
 // #endregion
 
-// #region - Ch.01 - 02.삼각형 판별하기
+// #region - Ch.01 - 02. 삼각형 판별하기
 // function solution(a, b, c) {
 //   const totalNum = a + b + c;
 //   let maxNum = a;
@@ -21,8 +21,21 @@
 // }
 // #endregion
 
-// #region - Ch.01 - 03.연필 개수
-function solution(n) {
-  return Math.ceil(n / 12);
-}
+// #region - Ch.01 - 03. 연필 개수
+// function solution(n) {
+//   return Math.ceil(n / 12);
+// }
+// #endregion
+
+// // #region - Ch.01 - 04. 1부터 N까지 합 출력하기
+// function solution(n) {
+//   let answer = 0;
+
+//   for (let i = 1; i <= n; i++) {
+//     answer += i;
+//   }
+
+//   return answer;
+// }
+// #endregion
 // #endregion
