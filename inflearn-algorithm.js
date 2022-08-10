@@ -46,19 +46,30 @@
 // #endregion
 
 // #region - Ch.01 - 06. 홀수
-function solution(arr) {
-  let sumOddNum = 0;
-  let minOddNum = Number.MAX_SAFE_INTEGER;
+// function solution(arr) {
+//   let sumOddNum = 0;
+//   let minOddNum = Number.MAX_SAFE_INTEGER;
 
-  for (let curNum of arr) {
-    if (curNum % 2) {
-      sumOddNum += curNum;
-      if (curNum < minOddNum) minOddNum = curNum;
-    }
-  }
+//   for (let curNum of arr) {
+//     if (curNum % 2) {
+//       sumOddNum += curNum;
+//       if (curNum < minOddNum) minOddNum = curNum;
+//     }
+//   }
 
-  return [sumOddNum, minOddNum];
+//   return [sumOddNum, minOddNum];
+// }
+// #endregion
+
+// #region - Ch.01 - 07. 10부제
+function solution(n, arr) {
+  return arr.reduce((acc, cur) => {
+    if (cur % 10 === n) acc += 1;
+
+    return acc;
+  }, 0);
 }
 // #endregion
 
-console.log(solution([12, 77, 38, 41, 53, 92, 85]));
+console.log(solution(3, [25, 23, 11, 47, 53, 17, 33]));
+console.log(solution(0, [12, 20, 54, 30, 87, 91, 30]));
