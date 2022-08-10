@@ -146,21 +146,27 @@
 // #endregion
 
 // #region - Ch.01 - 12. 대소문자 변환
-function solution(str) {
-  let answer = "";
+// function solution(str) {
+//   let answer = "";
 
-  for (let i = 0; i < str.length; i++) {
-    const convertAsciiCode = str[i].charCodeAt();
+//   for (let i = 0; i < str.length; i++) {
+//     const convertAsciiCode = str[i].charCodeAt();
 
-    if (65 <= convertAsciiCode && convertAsciiCode <= 90) {
-      answer += String.fromCharCode(convertAsciiCode + 32);
-    } else if (97 <= convertAsciiCode && convertAsciiCode <= 122) {
-      answer += String.fromCharCode(convertAsciiCode - 32);
-    }
-  }
+//     if (65 <= convertAsciiCode && convertAsciiCode <= 90) {
+//       answer += String.fromCharCode(convertAsciiCode + 32);
+//     } else if (97 <= convertAsciiCode && convertAsciiCode <= 122) {
+//       answer += String.fromCharCode(convertAsciiCode - 32);
+//     }
+//   }
 
-  return answer;
-}
+//   return answer;
+// }
 // #endregion
 
-console.log(solution("StuDY"));
+// #region - Ch.01 - 13. 가장 긴 문자열
+// function solution(arr) {
+//   return arr.reduce((acc, cur) => (acc.length < cur.length ? cur : acc), "");
+// }
+// #endregion
+
+console.log(solution(["teacher", "time", "student", "beautiful", "good"]));
