@@ -92,15 +92,27 @@
 // #endregion
 
 // #region - Ch.01 - 09. A를 #으로
-function solution(str) {
-  let answer = "";
+// function solution(str) {
+//   let answer = "";
+
+//   for (let i = 0; i < str.length; i++) {
+//     answer += str[i] === "A" ? "#" : str[i];
+//   }
+
+//   return answer;
+// }
+// #endregion
+
+// #region - Ch.01 - 10. 문자 찾기
+function solution(str, char) {
+  let count = 0;
 
   for (let i = 0; i < str.length; i++) {
-    answer += str[i] === "A" ? "#" : str[i];
+    if (str[i] === char) count++;
   }
 
-  return answer;
+  return count;
 }
 // #endregion
 
-console.log(solution([20, 7, 23, 19, 10, 15, 25, 8, 13]));
+console.log(solution("COMPUTERPROGRAMMING", "R"));
