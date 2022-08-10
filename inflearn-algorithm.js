@@ -170,12 +170,23 @@
 // #endregion
 
 // #region - Ch.01 - 15. 가운데 문자 출력
-function solution(str) {
-  const centerIdx = Math.ceil(str.length / 2 - 1);
+// function solution(str) {
+//   const centerIdx = Math.ceil(str.length / 2 - 1);
 
-  return str.substring(centerIdx, centerIdx + (str.length % 2 ? 1 : 2));
-}
+//   return str.substring(centerIdx, centerIdx + (str.length % 2 ? 1 : 2));
+// }
 // #endregion
 
-console.log(solution("study"));
-console.log(solution("good"));
+// #region - Ch.01 - 16. 중복문자제거
+function solution(str) {
+  const cacheObj = {};
+
+  for (let i = 0; i < str.length; i++) {
+    const curChar = str[i];
+
+    if (!cacheObj[curChar]) cacheObj[curChar] = true;
+  }
+
+  return Object.keys(cacheObj).join("");
+}
+// #endregion
