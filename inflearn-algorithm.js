@@ -145,7 +145,7 @@
 // }
 // #endregion
 
-// #region - Ch.01 - 12. 대소문자 변환
+// #region - Ch.01 - 13. 대소문자 변환
 // function solution(str) {
 //   let answer = "";
 
@@ -163,10 +163,19 @@
 // }
 // #endregion
 
-// #region - Ch.01 - 13. 가장 긴 문자열
+// #region - Ch.01 - 14. 가장 긴 문자열
 // function solution(arr) {
 //   return arr.reduce((acc, cur) => (acc.length < cur.length ? cur : acc), "");
 // }
 // #endregion
 
-console.log(solution(["teacher", "time", "student", "beautiful", "good"]));
+// #region - Ch.01 - 15. 가운데 문자 출력
+function solution(str) {
+  const centerIdx = Math.ceil(str.length / 2 - 1);
+
+  return str.substring(centerIdx, centerIdx + (str.length % 2 ? 1 : 2));
+}
+// #endregion
+
+console.log(solution("study"));
+console.log(solution("good"));
