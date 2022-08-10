@@ -8,3 +8,15 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Ch.01 - 02.삼각형 판별하기
+function solution(a, b, c) {
+  const totalNum = a + b + c;
+  let maxNum = a;
+
+  if (maxNum < b) maxNum = b;
+  if (maxNum < c) maxNum = c;
+
+  return totalNum - maxNum * 2 > 0 ? "YES" : "NO";
+}
+// #endregion
