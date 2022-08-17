@@ -416,3 +416,24 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Ch.03 - 05. 문자열 압축
+// function solution(str) {
+//   let answer = "";
+//   let cache = "";
+
+//   for (let i = 0; i <= str.length; i++) {
+//     const targetChar = cache[0];
+//     const curChar = str[i];
+
+//     if (cache === "" || targetChar === curChar) {
+//       cache += curChar;
+//     } else {
+//       answer += `${targetChar}${1 < cache.length ? cache.length : ""}`;
+//       cache = curChar;
+//     }
+//   }
+
+//   return answer;
+// }
+// #endregion
