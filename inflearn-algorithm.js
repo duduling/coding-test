@@ -395,3 +395,24 @@
 //   return Number.parseInt(str.replace(/[^0-9]/g, ""), 10);
 // }
 // #endregion
+
+// #region - Ch.03 - 04. 가장 짧은 문자거리
+// function solution(str, char) {
+//   let cacheDistance = 100;
+//   let answer = new Array(str.length).fill(0);
+
+//   for (let i = 0; i < str.length; i++) {
+//     cacheDistance = str[i] === char ? 0 : ++cacheDistance;
+
+//     answer[i] = cacheDistance;
+//   }
+
+//   for (let i = str.length - 1; 0 <= i; i--) {
+//     cacheDistance = str[i] === char ? 0 : Math.min(++cacheDistance, answer[i]);
+
+//     answer[i] = cacheDistance;
+//   }
+
+//   return answer;
+// }
+// #endregion
