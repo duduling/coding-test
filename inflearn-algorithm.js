@@ -204,3 +204,17 @@
 //   return Object.keys(cacheObj);
 // }
 // #endregion
+
+// #region - Ch.02 - 01. 큰 수 출력하기
+// function solution(n, arr) {
+//   const answer = [];
+
+//   arr.reduce((preNum, curNum) => {
+//     if (preNum < curNum) answer.push(curNum);
+
+//     return curNum;
+//   }, n);
+
+//   return answer;
+// }
+// #endregion
