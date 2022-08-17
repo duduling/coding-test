@@ -309,3 +309,32 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Ch.02 - 06. 격자판 최대합
+// function solution(n, arr) {
+//   let answer = 0;
+
+//   for (let i = 0; i < n; i++) {
+//     let rowSum = 0;
+//     let colSum = 0;
+//     for (let j = 0; j < n; j++) {
+//       rowSum += arr[i][j];
+//       colSum += arr[j][i];
+//     }
+//     answer = Math.max(answer, rowSum, colSum);
+//   }
+
+//   {
+//     let leftCrossSum = 0;
+//     let rightCrossSum = 0;
+
+//     for (let l = 0; l < n; l++) {
+//       leftCrossSum += arr[l][l];
+//       rightCrossSum += arr[l][n - l - 1];
+//     }
+//     answer = Math.max(answer, leftCrossSum, rightCrossSum);
+//   }
+
+//   return answer;
+// }
+// #endregion
