@@ -218,3 +218,20 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Ch.02 - 02. 보이는 학생
+// function solution(n, arr) {
+//   let answer = 0;
+
+//   arr.reduce((preNum, curNum) => {
+//     if (preNum < curNum) {
+//       answer++;
+//       return curNum;
+//     }
+
+//     return preNum;
+//   }, n);
+
+//   return answer;
+// }
+// #endregion
