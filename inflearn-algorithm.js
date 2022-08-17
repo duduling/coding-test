@@ -275,3 +275,37 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Ch.02 - 05. 등수구하기 ver.1
+// function solution(arr) {
+//   const rankTable = {};
+
+//   [...arr]
+//     .sort((a, b) => b - a)
+//     .forEach((score, idx) => {
+//       const curRank = idx + 1;
+
+//       if (!rankTable[score]) {
+//         rankTable[score] = curRank;
+//       }
+//     });
+
+//   return arr.map((score) => rankTable[score]);
+// }
+// #endregion
+
+// #region - Ch.02 - 05. 등수구하기 ver.2
+// function solution(arr) {
+//   const n = arr.length;
+//   let answer = new Array(n).fill(1);
+
+//   for (let i = 0; i < n; i++) {
+//     const scoreA = arr[i];
+//     for (let j = 0; j < n; j++) {
+//       const scoreB = arr[j];
+//       if (scoreA < scoreB) answer[i]++;
+//     }
+//   }
+//   return answer;
+// }
+// #endregion
