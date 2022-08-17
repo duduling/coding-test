@@ -381,3 +381,11 @@
 //   return "YES";
 // }
 // #endregion
+
+// #region - Ch.03 - 02. 유효한 팰린드롬
+// function solution(str) {
+//   const cleanStr = str.replace(/[^a-zA-z]/g, "").toUpperCase();
+
+//   return cleanStr === cleanStr.split("").reverse().join("") ? "YES" : "NO";
+// }
+// #endregion
