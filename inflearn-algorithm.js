@@ -260,3 +260,18 @@
 //   return scoreList;
 // }
 // #endregion
+
+// #region - Ch.02 - 04. 점수계산
+// function solution(arr) {
+//   let answer = 0;
+
+//   arr.reduce((acc, cur) => {
+//     const addPoint = cur ? acc + 1 : 0;
+//     answer += addPoint;
+
+//     return addPoint;
+//   }, 0);
+
+//   return answer;
+// }
+// #endregion
