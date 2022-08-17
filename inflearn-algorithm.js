@@ -338,3 +338,46 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Ch.02 - 07. 봉우리
+// function solution(n, arr) {
+//   let answer = 0;
+
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < n; j++) {
+//       const curHeight = arr[i][j];
+
+//       const eastHeight = arr[i]?.[j - 1] || 0;
+//       const westHeight = arr[i]?.[j + 1] || 0;
+//       const southHeight = arr[i + 1]?.[j] || 0;
+//       const northHeight = arr[i - 1]?.[j] || 0;
+
+//       if (
+//         eastHeight < curHeight &&
+//         westHeight < curHeight &&
+//         southHeight < curHeight &&
+//         northHeight < curHeight
+//       ) {
+//         answer++;
+//       }
+//     }
+//   }
+
+//   return answer;
+// }
+// #endregion
+
+// #region - Ch.03 - 01. 회문 문자열
+// function solution(str) {
+//   const convertToUpperStr = str.toUpperCase();
+
+//   const n = convertToUpperStr.length;
+//   const limitNum = Math.floor(n / 2);
+
+//   for (let i = 0; i < limitNum; i++) {
+//     if (convertToUpperStr[i] !== convertToUpperStr[n - 1 - i]) return "NO";
+//   }
+
+//   return "YES";
+// }
+// #endregion
