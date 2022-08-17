@@ -389,3 +389,9 @@
 //   return cleanStr === cleanStr.split("").reverse().join("") ? "YES" : "NO";
 // }
 // #endregion
+
+// #region - Ch.03 - 03. 숫자만 추출
+// function solution(str) {
+//   return Number.parseInt(str.replace(/[^0-9]/g, ""), 10);
+// }
+// #endregion
