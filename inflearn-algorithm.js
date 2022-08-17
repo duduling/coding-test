@@ -235,3 +235,28 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Ch.02 - 03. 가위 바위 보
+// function solution(n, arr1, arr2) {
+//   const victoryConditionsObj = {
+//     1: 2,
+//     2: 3,
+//     3: 1,
+//   };
+
+//   const scoreList = [];
+
+//   for (let i = 0; i < n; i++) {
+//     const tempA = arr1[i];
+//     const tempB = arr2[i];
+
+//     if (tempA === tempB) {
+//       scoreList.push("D");
+//     } else {
+//       scoreList.push(victoryConditionsObj[tempA] === tempB ? "B" : "A");
+//     }
+//   }
+
+//   return scoreList;
+// }
+// #endregion
