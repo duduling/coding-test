@@ -1,3 +1,5 @@
+// #region - Ch.01 - 기본문제 풀이
+
 // #region - Ch.01 - 01. 세 수 중 최솟값
 // function solution(a, b, c) {
 //   let answer = a;
@@ -27,7 +29,7 @@
 // }
 // #endregion
 
-// // #region - Ch.01 - 04. 1부터 N까지 합 출력하기
+// #region - Ch.01 - 04. 1부터 N까지 합 출력하기
 // function solution(n) {
 //   let answer = 0;
 
@@ -205,6 +207,10 @@
 // }
 // #endregion
 
+// #endregion
+
+// #region - Ch.02 - 2차원 배열 탐색
+
 // #region - Ch.02 - 01. 큰 수 출력하기
 // function solution(n, arr) {
 //   const answer = [];
@@ -367,6 +373,10 @@
 // }
 // #endregion
 
+// #endregion
+
+// #region - Ch.03 - 문자열 탐색
+
 // #region - Ch.03 - 01. 회문 문자열
 // function solution(str) {
 //   const convertToUpperStr = str.toUpperCase();
@@ -435,5 +445,25 @@
 //   }
 
 //   return answer;
+// }
+// #endregion
+
+//#endregion
+
+// #region - Ch.04 - 01. 자릿수의 합
+// function solution(arr) {
+//   let cacheMaxSumNum = 0;
+
+//   return arr.reduce((acc, cur) => {
+//     const sumNum = `${cur}`
+//       .split("")
+//       .reduce((acc, cur) => acc + Number.parseInt(cur, 10), 0);
+
+//     if (cacheMaxSumNum <= sumNum) {
+//       cacheMaxSumNum = sumNum;
+//       return Math.max(acc, cur);
+//     }
+//     return acc;
+//   }, 0);
 // }
 // #endregion
