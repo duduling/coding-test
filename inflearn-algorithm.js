@@ -467,3 +467,36 @@
 //   }, 0);
 // }
 // #endregion
+
+// #region - Ch.04 - 02. 뒤집은 소수
+// function solution(arr) {
+//   const checkPrimeNum = (num) => {
+//     if (num === 1) return false;
+
+//     const squareRootNum = Math.sqrt(num);
+
+//     for (let i = 2; i <= squareRootNum; i++) {
+//       if (num % i === 0) return false;
+//     }
+
+//     return true;
+//   };
+
+//   const answer = [];
+
+//   for (let x of arr) {
+//     let reverseNum = 0;
+
+//     while (x) {
+//       const remainNum = x % 10;
+
+//       reverseNum = reverseNum * 10 + remainNum;
+//       x = parseInt(x / 10, 10);
+//     }
+
+//     if (checkPrimeNum(reverseNum)) answer.push(reverseNum);
+//   }
+
+//   return answer;
+// }
+// #endregion
