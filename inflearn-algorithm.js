@@ -557,3 +557,23 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Ch.04 - 05. K번째 큰 수
+// function solution(k, arr) {
+//   let maxSumList = new Set(); // 총 합이 같은 값을 제거하기 위함
+
+//   const arrLength = arr.length;
+
+//   for (let i = 0; i < arrLength; i++) {
+//     for (let j = i + 1; j < arrLength; j++) {
+//       for (let m = j + 1; m < arrLength; m++) {
+//         maxSumList.add(arr[i] + arr[j] + arr[m]);
+//       }
+//     }
+//   }
+
+//   return Array.from(maxSumList).sort((a, b) => b - a)[k - 1];
+// }
+// #endregion
+
+console.log(solution(3, [13, 15, 34, 23, 45, 65, 33, 11, 26, 42]));
