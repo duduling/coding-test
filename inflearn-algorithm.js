@@ -500,3 +500,33 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Ch.04 - 03. 멘토링
+// function solution(test) {
+//   let answer = 0;
+
+//   let students = test[0].length;
+//   let testNum = test.length;
+
+//   for (let i = 1; i <= students; i++) {
+//     for (let j = 1; j <= students; j++) {
+//       if (i === j) continue;
+
+//       let count = 0;
+//       for (let k = 0; k < testNum; k++) {
+//         let mentee = 0;
+//         let mentor = 0;
+
+//         for (let s = 0; s < students; s++) {
+//           if (test[k][s] === i) mentee = s;
+//           if (test[k][s] === j) mentor = s;
+//         }
+
+//         if (mentee < mentor) count++;
+//       }
+//       if (count === testNum) answer++;
+//     }
+//   }
+//   return answer;
+// }
+// #endregion
