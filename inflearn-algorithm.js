@@ -530,3 +530,30 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Ch.04 - 04. 졸업 선물
+// function solution(limitPrice, doubleArr) {
+//   let answer = 0;
+
+//   const n = doubleArr.length;
+//   const sortedArr = [...doubleArr].sort((a, b) => a[0] + a[1] - (b[0] + b[1]));
+
+//   for (let i = 0; i < n; i++) {
+//     let remainPrice = limitPrice - (sortedArr[i][0] / 2 + sortedArr[i][1]);
+//     let count = 1;
+//     for (let j = 0; j < n; j++) {
+//       if (i === j) continue;
+
+//       remainPrice -= sortedArr[j][0] + sortedArr[j][1];
+//       if (0 <= remainPrice) {
+//         count++;
+//       } else {
+//         answer = Math.max(answer, count);
+//         break;
+//       }
+//     }
+//   }
+
+//   return answer;
+// }
+// #endregion
