@@ -709,4 +709,23 @@
 // }
 // #endregion
 
+// #region - Ch.05 - 07. 아나그램(해쉬)
+// function solution(str1, str2) {
+//   const cacheMap = new Map();
+
+//   for (const addChar of str1) {
+//     if (cacheMap.has(addChar)) cacheMap.set(addChar, cacheMap.get(addChar) + 1);
+//     else cacheMap.set(addChar, 1);
+//   }
+
+//   for (const removeChar of str2) {
+//     if (!cacheMap.has(removeChar) || cacheMap.get(removeChar) === 0)
+//       return "NO";
+//     else cacheMap.set(removeChar, cacheMap.get(removeChar) - 1);
+//   }
+
+//   return "YES";
+// }
+// #endregion
+
 // #endregion
