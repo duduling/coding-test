@@ -608,4 +608,22 @@
 // }
 // #endregion
 
+// #region - Ch.05 - 02. 공통원소 구하기
+// function solution(arr1, arr2) {
+//   const answer = [];
+
+//   const sortedArr1 = [...arr1].sort((a, b) => a - b);
+//   const sortedArr2 = [...arr2].sort((a, b) => a - b);
+
+//   for (let i = 0, j = 0; i < arr1.length && j < arr2.length; ) {
+//     if (sortedArr1[i] === sortedArr2[j]) {
+//       answer.push(sortedArr1[i++]);
+//       j++;
+//     } else if (sortedArr1[i] < sortedArr2[j]) i++;
+//     else if (sortedArr1[i] > sortedArr2[j]) j++;
+//   }
+//   return answer;
+// }
+// #endregion
+
 // #endregion
