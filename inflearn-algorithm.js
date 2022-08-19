@@ -450,6 +450,8 @@
 
 //#endregion
 
+// #region - Ch.04 - 완전탐색(블루투포스)
+
 // #region - Ch.04 - 01. 자릿수의 합
 // function solution(arr) {
 //   let cacheMaxSumNum = 0;
@@ -576,4 +578,34 @@
 // }
 // #endregion
 
-console.log(solution(3, [13, 15, 34, 23, 45, 65, 33, 11, 26, 42]));
+// #endregion
+
+// #region - Ch.05 - 효율성(투포인터 알고리즘, 슬라이딩윈도우, 해쉬)
+
+// #region - Ch.05 - 01. 두 배열 합치기
+// function solution(arr1, arr2) {
+//   const answer = [];
+//   const arr1Length = arr1.length;
+//   const arr2Length = arr2.length;
+
+//   let arr1Pointer = 0;
+//   let arr2Pointer = 0;
+//   while (arr1Pointer < arr1Length && arr2Pointer < arr2Length) {
+//     const arr1Value = arr1[arr1Pointer];
+//     const arr2Value = arr2[arr2Pointer];
+
+//     if (arr1Value <= arr2Value) {
+//       answer.push(arr1[arr1Pointer++]);
+//     } else if (arr2Value < arr1Value) {
+//       answer.push(arr2[arr2Pointer++]);
+//     }
+//   }
+
+//   while (arr1Pointer < arr1Length) answer.push(arr1[arr1Pointer++]);
+//   while (arr2Pointer < arr2Length) answer.push(arr2[arr2Pointer++]);
+
+//   return answer;
+// }
+// #endregion
+
+// #endregion
