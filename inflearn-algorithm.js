@@ -686,4 +686,27 @@
 // }
 // #endregion
 
+// #region - Ch.05 - 06. 학급 회장(해쉬)
+// function solution(arr) {
+//   let answer = null;
+//   const cacheMap = new Map();
+
+//   for (let candidate of arr) {
+//     if (cacheMap.has(candidate))
+//       cacheMap.set(candidate, cacheMap.get(candidate) + 1);
+//     else cacheMap.set(candidate, 1);
+//   }
+
+//   let maxVote = 0;
+//   for (let [key, value] of cacheMap) {
+//     if (maxVote < value) {
+//       answer = key;
+//       maxVote = value;
+//     }
+//   }
+
+//   return answer;
+// }
+// #endregion
+
 // #endregion
