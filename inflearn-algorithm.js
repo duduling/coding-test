@@ -626,4 +626,27 @@
 // }
 // #endregion
 
+// #region - Ch.05 - 03. 연속 부분수열 1
+// function solution(m, arr) {
+//   let answer = 0;
+//   const arrLength = arr.length;
+
+//   let startPointer = 0;
+//   let endPointer = 0;
+//   let sumNum = 0;
+//   while (endPointer < arrLength) {
+//     if (sumNum === m) {
+//       answer++;
+//       sumNum -= arr[startPointer++];
+//       sumNum += arr[++endPointer];
+//     } else if (m < sumNum) {
+//       sumNum -= arr[startPointer++];
+//     } else if (sumNum < m) {
+//       sumNum += arr[++endPointer];
+//     }
+//   }
+//   return answer;
+// }
+// #endregion
+
 // #endregion
