@@ -656,13 +656,30 @@
 
 //   next: for (let i = 0; i < arrLength; i++) {
 //     let remainNum = m;
-
 //     for (let j = i; j < arrLength; j++) {
 //       remainNum -= arr[j];
 
 //       if (0 <= remainNum) answer++;
 //       else continue next;
 //     }
+//   }
+
+//   return answer;
+// }
+// #endregion
+
+// #region - Ch.05 - 05. 최대 매출
+// function solution(k, arr) {
+//   let answer = 0;
+//   const arrLength = arr.length;
+
+//   for (let i = 0; i < k; i++) answer += arr[i];
+
+//   let curSales = answer;
+//   for (let j = k; j < arrLength; j++) {
+//     curSales = curSales - arr[j - k] + arr[j];
+
+//     answer = Math.max(answer, curSales);
 //   }
 
 //   return answer;
