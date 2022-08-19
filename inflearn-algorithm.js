@@ -728,4 +728,38 @@
 // }
 // #endregion
 
+// #region - Ch.05 - 08. 모든 아나그램 찾기(해쉬, 투포인터, 슬라이딩 윈도우)
+// function solution(strS, strT) {
+//   let answer = 0;
+
+//   // str2를 해쉬 값으로 변경
+//   const cacheObjStrT = new Map();
+//   for (const charT of strT) {
+//     if (cacheObjStrT.has(charT))
+//       cacheObjStrT.set(charT, cacheObjStrT.get(charT) + 1);
+//     else cacheObjStrT.set(charT, 1);
+//   }
+
+//   // for문을 돌면서 str2와 같은 길이의 문자열을 해쉬 값으로 변경해서 비교 연산
+//   const cacheObjStrS = new Map();
+//   next: for (let j = 0; j < strS.length; j++) {
+//     const charS = strS[j];
+//     if (cacheObjStrS.has(charS))
+//       cacheObjStrS.set(charS, cacheObjStrS.get(charS) + 1);
+//     else cacheObjStrS.set(charS, 1);
+
+//     const removeCharS = strS[j - strT.length];
+//     if (1 < cacheObjStrS.get(removeCharS))
+//       cacheObjStrS.set(removeCharS, cacheObjStrS.get(removeCharS) - 1);
+//     else cacheObjStrS.delete(removeCharS);
+
+//     for (const [key] of cacheObjStrT) {
+//       if (cacheObjStrT.get(key) !== cacheObjStrS.get(key)) continue next;
+//     }
+//     answer++;
+//   }
+//   return answer;
+// }
+// #endregion
+
 // #endregion
