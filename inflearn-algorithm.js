@@ -797,29 +797,65 @@
 // #endregion
 
 // #region - Ch.06 - 03. 크레인 인형뽑기(카카오 기출)
-function solution(board, moves) {
-  let answer = 0;
+// function solution(board, moves) {
+//   let answer = 0;
 
-  const catchDollStack = [];
-  moves.forEach((movePointer) => {
-    for (let i = 0; i < board.length; i++) {
-      const curCatchDoll = board[i][movePointer - 1];
+//   const catchDollStack = [];
+//   moves.forEach((movePointer) => {
+//     for (let i = 0; i < board.length; i++) {
+//       const curCatchDoll = board[i][movePointer - 1];
 
-      if (curCatchDoll) {
-        board[i][movePointer - 1] = 0;
+//       if (curCatchDoll) {
+//         board[i][movePointer - 1] = 0;
 
-        if (curCatchDoll === catchDollStack.at(-1)) {
-          catchDollStack.pop();
-          answer += 2;
-        } else catchDollStack.push(curCatchDoll);
+//         if (curCatchDoll === catchDollStack.at(-1)) {
+//           catchDollStack.pop();
+//           answer += 2;
+//         } else catchDollStack.push(curCatchDoll);
 
-        break;
-      }
-    }
-  });
+//         break;
+//       }
+//     }
+//   });
 
-  return answer;
-}
+//   return answer;
+// }
+// #endregion
+
+// #region - Ch.06 - 03. 크레인 인형뽑기(카카오 기출)
+// function solution(str) {
+//   const stack = [];
+//   for (const tmp of str) {
+//     const tempNum = Number.parseInt(tmp, 10);
+
+//     if (Number.isInteger(tempNum)) {
+//       stack.push(tempNum);
+//     } else {
+//       const rightVal = stack.pop();
+//       const leftVal = stack.pop();
+
+//       switch (tmp) {
+//         case "+":
+//           stack.push(leftVal + rightVal);
+//           break;
+//         case "-":
+//           stack.push(leftVal - rightVal);
+//           break;
+//         case "*":
+//           stack.push(leftVal * rightVal);
+//           break;
+//         case "/":
+//           stack.push(leftVal / rightVal);
+//           break;
+
+//         default:
+//           break;
+//       }
+//     }
+//   }
+
+//   return stack[0];
+// }
 // #endregion
 
 // #endregion
