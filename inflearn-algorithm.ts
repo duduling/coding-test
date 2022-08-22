@@ -892,4 +892,16 @@
 // }
 // #endregion
 
+// #region - Ch.06 - 07. 교육과정 설계
+// function solution(mySchedule: string, classSchedule: string): "YES" | "NO" {
+//   const queue: Array<string> = mySchedule.split("");
+
+//   for (const curLecture of classSchedule) {
+//     if (curLecture === queue[0]) queue.shift();
+//   }
+
+//   return queue.length === 0 ? "YES" : "NO";
+// }
+// #endregion
+
 // #endregion
