@@ -879,4 +879,17 @@
 // }
 // #endregion
 
+// #region - Ch.06 - 06. 공주 구하기
+// function solution(n, m) {
+//   const queue = Array.from({ length: n }, (_, i) => i + 1);
+
+//   while (1 < queue.length) {
+//     for (let i = 1; i < m; i++) queue.push(queue.shift());
+//     queue.shift();
+//   }
+
+//   return queue[0];
+// }
+// #endregion
+
 // #endregion
