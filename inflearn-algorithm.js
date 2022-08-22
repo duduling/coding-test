@@ -822,7 +822,7 @@
 // }
 // #endregion
 
-// #region - Ch.06 - 03. 크레인 인형뽑기(카카오 기출)
+// #region - Ch.06 - 04. 후위식 연산(postfix)
 // function solution(str) {
 //   const stack = [];
 //   for (const tmp of str) {
@@ -855,6 +855,27 @@
 //   }
 
 //   return stack[0];
+// }
+// #endregion
+
+// #region - Ch.06 - 05. 쇠막대기
+// function solution(str) {
+//   let answer = 0;
+//   const stack = [];
+
+//   for (let i = 0; i < str.length; i++) {
+//     const braket = str[i];
+
+//     if (braket === "(") stack.push(braket);
+//     else {
+//       stack.pop();
+
+//       if (str[i - 1] === "(") answer += stack.length;
+//       else answer++;
+//     }
+//   }
+
+//   return answer;
 // }
 // #endregion
 
