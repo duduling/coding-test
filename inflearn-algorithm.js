@@ -763,3 +763,22 @@
 // #endregion
 
 // #endregion
+
+// #region - Ch.06 - 자료구조(스택, 큐)
+
+// #region - Ch.06 - 01. 올바른 괄호
+// function solution(braketStr) {
+//   if (braketStr.length % 2 === 1) return "NO";
+
+//   const braketStack = [];
+
+//   for (const bracket of braketStr) {
+//     if (bracket === "(") braketStack.push(bracket);
+//     else if (braketStack.pop() !== "(") return "NO";
+//   }
+
+//   return braketStack.length === 0 ? "YES" : "NO";
+// }
+// #endregion
+
+// #endregion
