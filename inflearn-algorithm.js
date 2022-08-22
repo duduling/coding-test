@@ -781,4 +781,19 @@
 // }
 // #endregion
 
+// #region - Ch.06 - 02. 괄호문자제거
+// function solution(str) {
+//   let answer = "";
+
+//   const stack = [];
+//   for (const char of str) {
+//     if (char === "(") stack.push(char);
+//     else if (char === ")") stack.pop();
+//     else if (stack.length === 0) answer += char;
+//   }
+
+//   return answer;
+// }
+// #endregion
+
 // #endregion
