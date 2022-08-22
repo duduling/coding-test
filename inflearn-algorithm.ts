@@ -767,10 +767,10 @@
 // #region - Ch.06 - 자료구조(스택, 큐)
 
 // #region - Ch.06 - 01. 올바른 괄호
-// function solution(braketStr) {
+// function solution(braketStr: string): "YES" | "NO" {
 //   if (braketStr.length % 2 === 1) return "NO";
 
-//   const braketStack = [];
+//   const braketStack: Array<string> = [];
 
 //   for (const bracket of braketStr) {
 //     if (bracket === "(") braketStack.push(bracket);
@@ -782,10 +782,10 @@
 // #endregion
 
 // #region - Ch.06 - 02. 괄호문자제거
-// function solution(str) {
-//   let answer = "";
+// function solution(str: string): string {
+//   let answer: string = "";
 
-//   const stack = [];
+//   const stack: Array<string> = [];
 //   for (const char of str) {
 //     if (char === "(") stack.push(char);
 //     else if (char === ")") stack.pop();
@@ -797,17 +797,18 @@
 // #endregion
 
 // #region - Ch.06 - 03. 크레인 인형뽑기(카카오 기출)
-// function solution(board, moves) {
-//   let answer = 0;
+// function solution(board: Array<Array<number>>, moves: Array<number>): number {
+//   let answer: number = 0;
 
-//   const catchDollStack = [];
+//   const catchDollStack: Array<number> = [];
 //   moves.forEach((movePointer) => {
 //     for (let i = 0; i < board.length; i++) {
-//       const curCatchDoll = board[i][movePointer - 1];
+//       const curCatchDoll: number = board[i][movePointer - 1] || 0;
 
 //       if (curCatchDoll) {
 //         board[i][movePointer - 1] = 0;
 
+//         // catchDollStack[catchDollStack.length - 1] -> catchDollStack.at(-1)
 //         if (curCatchDoll === catchDollStack.at(-1)) {
 //           catchDollStack.pop();
 //           answer += 2;
@@ -823,16 +824,16 @@
 // #endregion
 
 // #region - Ch.06 - 04. 후위식 연산(postfix)
-// function solution(str) {
-//   const stack = [];
+// function solution(str: string): number {
+//   const stack: Array<number> = [];
 //   for (const tmp of str) {
-//     const tempNum = Number.parseInt(tmp, 10);
+//     const tempNum: number = Number.parseInt(tmp, 10);
 
 //     if (Number.isInteger(tempNum)) {
 //       stack.push(tempNum);
 //     } else {
-//       const rightVal = stack.pop();
-//       const leftVal = stack.pop();
+//       const rightVal: number = stack.pop();
+//       const leftVal: number = stack.pop();
 
 //       switch (tmp) {
 //         case "+":
@@ -859,12 +860,12 @@
 // #endregion
 
 // #region - Ch.06 - 05. 쇠막대기
-// function solution(str) {
+// function solution(str: string): number {
 //   let answer = 0;
-//   const stack = [];
+//   const stack: Array<string> = [];
 
 //   for (let i = 0; i < str.length; i++) {
-//     const braket = str[i];
+//     const braket: string = str[i];
 
 //     if (braket === "(") stack.push(braket);
 //     else {
@@ -880,8 +881,8 @@
 // #endregion
 
 // #region - Ch.06 - 06. 공주 구하기
-// function solution(n, m) {
-//   const queue = Array.from({ length: n }, (_, i) => i + 1);
+// function solution(n: number, m: number): number {
+//   const queue: Array<number> = Array.from({ length: n }, (_, i) => i + 1);
 
 //   while (1 < queue.length) {
 //     for (let i = 1; i < m; i++) queue.push(queue.shift());
