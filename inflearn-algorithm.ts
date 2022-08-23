@@ -910,30 +910,29 @@
 // #region - Ch.07 - 정렬과 그리디, 결정알고리즘(이분검색)
 
 // #region - Ch.07 - 01. 선택정렬
-// function solution(n: number, str: string): Array<number> {
-//   const convertArr: Array<number> = str
-//     .split(" ")
-//     .map((char) => Number.parseInt(char, 10));
-
-//   for (let i: number = 0; i < n; i++) {
+// function solution(arr: Array<number>): Array<number> {
+//   for (let i: number = 0; i < arr.length; i++) {
 //     let minNumIdx = i;
 
-//     for (let j: number = i + 1; j < convertArr.length; j++)
-//       if (convertArr[j] < convertArr[minNumIdx]) minNumIdx = j;
+//     for (let j: number = i + 1; j < arr.length; j++)
+//       if (arr[j] < arr[minNumIdx]) minNumIdx = j;
 
-//     [convertArr[i], convertArr[minNumIdx]] = [
-//       convertArr[minNumIdx],
-//       convertArr[i],
-//     ];
+//     [arr[i], arr[minNumIdx]] = [arr[minNumIdx], arr[i]];
 //   }
 
-//   return convertArr;
+//   return arr;
 // }
 // #endregion
 
 // #region - Ch.07 - 02. 버블정렬
-// function solution(){}
-// console.log(solution())
+// function solution(arr: Array<number>): Array<number> {
+//   for (let i: number = 0; i < arr.length - 1; i++) {
+//     for (let j: number = 0; j < arr.length - i - 1; j++) {
+//       if (arr[j + 1] < arr[j]) [arr[j + 1], arr[j]] = [arr[j], arr[j + 1]];
+//     }
+//   }
+//   return arr;
+// }
 // #endregion
 
 // #region - Ch.07 - 03. Special Sort(버블정렬응용)
