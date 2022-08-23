@@ -936,21 +936,34 @@
 // #endregion
 
 // #region - Ch.07 - 03. Special Sort(버블정렬응용)
-function solution(arr: Array<number>): Array<number> {
-  let cacheIdx = 0;
-  for (let i = 0; i < arr.length - 1 - cacheIdx; i++) {
-    for (let j = 0 + cacheIdx; j < arr.length - 1; j++) {
-      if (0 < arr[j]) [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-      else cacheIdx++;
-    }
-  }
-  return arr;
-}
+// function solution(arr: Array<number>): Array<number> {
+//   let cacheIdx: number = 0;
+//   for (let i: number = 0; i < arr.length - 1 - cacheIdx; i++) {
+//     for (let j: number = 0 + cacheIdx; j < arr.length - 1; j++) {
+//       if (0 < arr[j]) [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+//       else cacheIdx++;
+//     }
+//   }
+//   return arr;
+// }
 // #endregion
 
-// #region - Ch.07 - 04. 삽입정렬
-// function solution(){}
-// console.log(solution())
+// // #region - Ch.07 - 04. 삽입정렬
+// function solution(arr: Array<number>): Array<number> {
+//   for (let i = 0; i < arr.length; i++) {
+//     let tempNum: number = arr[i];
+//     let j: number;
+
+//     for (j = i - 1; 0 <= j; j--) {
+//       if (tempNum < arr[j]) arr[j + 1] = arr[j];
+//       else break;
+//     }
+
+//     arr[j + 1] = tempNum;
+//   }
+
+//   return arr;
+// }
 // #endregion
 
 // #region - Ch.07 - 05. LRU(카카오 캐시 변형 : 삽입정렬응용)
