@@ -906,3 +906,84 @@
 // #endregion
 
 // #endregion
+
+// #region - Ch.07 - 정렬과 그리디, 결정알고리즘(이분검색)
+
+// #region - Ch.07 - 01. 선택정렬
+// function solution(n: number, str: string): Array<number> {
+//   const convertArr: Array<number> = str
+//     .split(" ")
+//     .map((char) => Number.parseInt(char, 10));
+
+//   for (let i: number = 0; i < n; i++) {
+//     let minNumIdx = i;
+
+//     for (let j: number = i + 1; j < convertArr.length; j++)
+//       if (convertArr[j] < convertArr[minNumIdx]) minNumIdx = j;
+
+//     [convertArr[i], convertArr[minNumIdx]] = [
+//       convertArr[minNumIdx],
+//       convertArr[i],
+//     ];
+//   }
+
+//   return convertArr;
+// }
+// #endregion
+
+// #region - Ch.07 - 02. 버블정렬
+// function solution(){}
+// console.log(solution())
+// #endregion
+
+// #region - Ch.07 - 03. Special Sort(버블정렬응용)
+// function solution(){}
+// console.log(solution())
+// #endregion
+
+// #region - Ch.07 - 04. 삽입정렬
+// function solution(){}
+// console.log(solution())
+// #endregion
+
+// #region - Ch.07 - 05. LRU(카카오 캐시 변형 : 삽입정렬응용)
+// function solution(){}
+// console.log(solution())
+// #endregion
+
+// #region - Ch.07 - 06. 장난꾸러기 현수
+// function solution(){}
+// console.log(solution())
+// #endregion
+
+// #region - Ch.07 - 07. 좌표 정렬
+// function solution(){}
+// console.log(solution())
+// #endregion
+
+// #region - Ch.07 - 08. 회의실 배정
+// function solution(){}
+// console.log(solution())
+// #endregion
+
+// #region - Ch.07 - 09. 결혼식
+// function solution(){}
+// console.log(solution())
+// #endregion
+
+// #region - Ch.07 - 10. 이분검색
+// function solution(){}
+// console.log(solution())
+// #endregion
+
+// #region - Ch.07 - 11. 뮤직비디오(결정알고리즘)
+// function solution(){}
+// console.log(solution())
+// #endregion
+
+// #region - Ch.07 - 12. 마구간 정하기(결정알고리즘)
+// function solution(){}
+// console.log(solution())
+// #endregion
+
+// #endregion
