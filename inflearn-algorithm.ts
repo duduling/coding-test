@@ -936,8 +936,16 @@
 // #endregion
 
 // #region - Ch.07 - 03. Special Sort(버블정렬응용)
-// function solution(){}
-// console.log(solution())
+function solution(arr: Array<number>): Array<number> {
+  let cacheIdx = 0;
+  for (let i = 0; i < arr.length - 1 - cacheIdx; i++) {
+    for (let j = 0 + cacheIdx; j < arr.length - 1; j++) {
+      if (0 < arr[j]) [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+      else cacheIdx++;
+    }
+  }
+  return arr;
+}
 // #endregion
 
 // #region - Ch.07 - 04. 삽입정렬
