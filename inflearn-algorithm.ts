@@ -997,28 +997,39 @@
 // }
 
 // Ver.2 → 내장 함수
-function solution(arr: Array<number>): Array<number> {
-  const cacheQueue: Array<number> = Array.from({ length: 5 }, () => 0);
-  const n = cacheQueue.length;
+// function solution(arr: Array<number>): Array<number> {
+//   const cacheQueue: Array<number> = Array.from({ length: 5 }, () => 0);
+//   const n = cacheQueue.length;
 
-  arr.forEach((data) => {
-    for (let i = 0; i < n; i++) {
-      if (data === cacheQueue[i]) cacheQueue.splice(i, 1);
-    }
+//   arr.forEach((data) => {
+//     for (let i = 0; i < n; i++) {
+//       if (data === cacheQueue[i]) cacheQueue.splice(i, 1);
+//     }
 
-    if (cacheQueue.length === n) cacheQueue.pop();
+//     if (cacheQueue.length === n) cacheQueue.pop();
 
-    cacheQueue.unshift(data);
-  });
+//     cacheQueue.unshift(data);
+//   });
 
-  return cacheQueue;
-}
+//   return cacheQueue;
+// }
 // #endregion
 
 // #region - Ch.07 - 06. 장난꾸러기 현수
-// function solution() {}
-// console.log(solution());
-// #endregion
+// function solution(statureList: Array<number>): Array<number> {
+//   const answer: Array<number> = [];
+
+//   const sortedStatureList: Array<number> = [...statureList].sort(
+//     (a, b) => a - b
+//   );
+
+//   sortedStatureList.forEach((data, idx) => {
+//     if (data !== statureList[idx]) answer.push(idx + 1);
+//   });
+
+//   return answer;
+// }
+//#endregion
 
 // #region - Ch.07 - 07. 좌표 정렬
 // function solution(){}
