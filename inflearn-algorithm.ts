@@ -948,7 +948,7 @@
 // }
 // #endregion
 
-// // #region - Ch.07 - 04. 삽입정렬
+// #region - Ch.07 - 04. 삽입정렬
 // function solution(arr: Array<number>): Array<number> {
 //   for (let i = 0; i < arr.length; i++) {
 //     let tempNum: number = arr[i];
@@ -967,13 +967,57 @@
 // #endregion
 
 // #region - Ch.07 - 05. LRU(카카오 캐시 변형 : 삽입정렬응용)
-// function solution(){}
-// console.log(solution())
+// Ver.1 → 삽입 정렬
+// function solution(arr: Array<number>): Array<number> {
+//   const cacheQueue: Array<number> = Array.from({ length: 5 }, () => 0);
+//   const n = cacheQueue.length;
+
+//   arr.forEach((data) => {
+//     let saved: boolean = false;
+
+//     for (let i = 0; i < n; i++) {
+//       if (data === cacheQueue[i]) {
+//         for (let j = i; 0 <= j; j--) {
+//           cacheQueue[j] = cacheQueue[j - 1];
+//         }
+//         saved = true;
+//       }
+//     }
+
+//     if (!saved) {
+//       for (let k = n - 1; 0 <= k; k--) {
+//         cacheQueue[k] = cacheQueue[k - 1];
+//       }
+//     }
+
+//     cacheQueue[0] = data;
+//   });
+
+//   return cacheQueue;
+// }
+
+// Ver.2 → 내장 함수
+function solution(arr: Array<number>): Array<number> {
+  const cacheQueue: Array<number> = Array.from({ length: 5 }, () => 0);
+  const n = cacheQueue.length;
+
+  arr.forEach((data) => {
+    for (let i = 0; i < n; i++) {
+      if (data === cacheQueue[i]) cacheQueue.splice(i, 1);
+    }
+
+    if (cacheQueue.length === n) cacheQueue.pop();
+
+    cacheQueue.unshift(data);
+  });
+
+  return cacheQueue;
+}
 // #endregion
 
 // #region - Ch.07 - 06. 장난꾸러기 현수
-// function solution(){}
-// console.log(solution())
+// function solution() {}
+// console.log(solution());
 // #endregion
 
 // #region - Ch.07 - 07. 좌표 정렬
