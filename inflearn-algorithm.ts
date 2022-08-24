@@ -1082,8 +1082,25 @@
 // #endregion
 
 // #region - Ch.07 - 10. 이분검색
-// function solution(){}
-// console.log(solution())
+// function solution(inputNum: number, arr: Array<number>): number {
+//   let answer = 0;
+
+//   arr.sort((a, b) => a - b);
+
+//   let lt: number = 0;
+//   let rt: number = arr.length - 1;
+//   while (lt <= rt) {
+//     let mid: number = Math.floor((lt + rt) / 2);
+
+//     if (arr[mid] === inputNum) {
+//       answer = mid + 1;
+//       break;
+//     } else if (arr[mid] > inputNum) rt = mid - 1;
+//     else if (arr[mid] < inputNum) lt = mid + 1;
+//   }
+
+//   return answer;
+// }
 // #endregion
 
 // #region - Ch.07 - 11. 뮤직비디오(결정알고리즘)
