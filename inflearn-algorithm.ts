@@ -1038,7 +1038,7 @@
 // }
 // #endregion
 
-// #region - Ch.07 - 08. 회의실 배정
+// #region - Ch.07 - 08. 회의실 배정 (그리디)
 // function solution(meetingList: Array<Array<number>>): number {
 //   let answer: number = 0;
 
@@ -1056,8 +1056,29 @@
 // }
 // #endregion
 
-// #region - Ch.07 - 09. 결혼식
+// #region - Ch.07 - 09. 결혼식 (그리디)
+// function solution(guestList: Array<Array<number>>): number {
+//   let answer: number = 0;
 
+//   const timeTable = [];
+//   for (const [arrive, departe] of guestList) {
+//     timeTable.push([arrive, "a"]);
+//     timeTable.push([departe, "d"]);
+//   }
+//   timeTable.sort(
+//     (a, b) => a[0] - b[0] || b[1].charCodeAt() - a[1].charCodeAt()
+//   );
+
+//   let cnt = 0;
+//   timeTable.forEach(([_, action]) => {
+//     if (action === "a") cnt++;
+//     else cnt--;
+
+//     answer = Math.max(answer, cnt);
+//   });
+
+//   return answer;
+// }
 // #endregion
 
 // #region - Ch.07 - 10. 이분검색
