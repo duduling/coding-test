@@ -1104,8 +1104,34 @@
 // #endregion
 
 // #region - Ch.07 - 11. 뮤직비디오(결정알고리즘)
-// function solution(){}
-// console.log(solution())
+// function solution(m: number, songList: Array<number>): number {
+//   let answer = 0;
+
+//   let lt = Math.max(...songList);
+//   let rt = songList.reduce((acc, cur) => acc + cur, 0);
+
+//   while (lt <= rt) {
+//     const mid = Math.floor((lt + rt) / 2);
+
+//     let count = 1;
+//     let sumPlayTime = 0;
+//     for (const song of songList) {
+//       const tempPlayTim = sumPlayTime + song;
+
+//       if (mid < tempPlayTim) {
+//         count++;
+//         sumPlayTime = song;
+//       } else sumPlayTime = tempPlayTim;
+//     }
+
+//     if (count <= m) {
+//       answer = mid;
+//       rt = mid - 1;
+//     } else lt = mid + 1;
+//   }
+
+//   return answer;
+// }
 // #endregion
 
 // #region - Ch.07 - 12. 마구간 정하기(결정알고리즘)
