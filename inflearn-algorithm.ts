@@ -1135,8 +1135,33 @@
 // #endregion
 
 // #region - Ch.07 - 12. 마구간 정하기(결정알고리즘)
-// function solution(){}
-// console.log(solution())
+// function solution(m: number, stalls: Array<number>): number {
+//   let answer: number = 0;
+
+//   stalls.sort((a, b) => a - b);
+
+//   let lt: number = 1;
+//   let rt: number = stalls.at(-1) - stalls.at(0);
+//   while (lt <= rt) {
+//     const mid: number = Math.floor((lt + rt) / 2);
+
+//     let count: number = 1;
+//     let tmp = stalls[0];
+//     for (let i = 1; i < stalls.length - 1; i++) {
+//       let distance = stalls[i] - tmp;
+//       if (mid <= distance) {
+//         count++;
+//         tmp = stalls[i];
+//       }
+//     }
+//     if (m === count) {
+//       answer = mid;
+//       lt = mid + 1;
+//     } else rt = mid - 1;
+//   }
+
+//   return answer;
+// }
 // #endregion
 
 // #endregion
