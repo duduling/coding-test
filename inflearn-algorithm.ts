@@ -1015,7 +1015,7 @@
 // }
 // #endregion
 
-// #region - Ch.07 - 06. 장난꾸러기 현수
+// #region - Ch.07 - 06. 장난꾸러기 현수 (정렬)
 // function solution(statureList: Array<number>): Array<number> {
 //   const answer: Array<number> = [];
 
@@ -1031,30 +1031,33 @@
 // }
 //#endregion
 
-// #region - Ch.07 - 07. 좌표 정렬
-function solution(arr: Array<Array<number>>): Array<Array<number>> {
-  arr.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
-  return arr;
-}
-console.log(
-  solution([
-    [2, 7],
-    [1, 3],
-    [1, 2],
-    [2, 5],
-    [3, 6],
-  ])
-);
+// #region - Ch.07 - 07. 좌표 정렬 (정렬)
+// function solution(arr: Array<Array<number>>): Array<Array<number>> {
+//   arr.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+//   return arr;
+// }
 // #endregion
 
 // #region - Ch.07 - 08. 회의실 배정
-// function solution(){}
-// console.log(solution())
+// function solution(meetingList: Array<Array<number>>): number {
+//   let answer: number = 0;
+
+//   meetingList.sort((a, b) => a[1] - b[1] || a[0] - b[0]);
+
+//   let endTime: number = 0;
+//   for (const meeting of meetingList) {
+//     if (endTime <= meeting[0]) {
+//       answer++;
+//       endTime = meeting[1];
+//     }
+//   }
+
+//   return answer;
+// }
 // #endregion
 
 // #region - Ch.07 - 09. 결혼식
-// function solution(){}
-// console.log(solution())
+
 // #endregion
 
 // #region - Ch.07 - 10. 이분검색
