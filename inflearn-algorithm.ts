@@ -1169,17 +1169,22 @@
 // #region - Ch.08 - 재귀함수와 완전탐색(DFS:깊이우선탐색)
 
 // #region - Ch.08 - 01. 재귀함수와 스택프레임(중요)
-// const solution = () => {
+// const solution = (n: number): void => {
+//   const DFS = (L: number): void => {
+//     if (L === 0) return;
+//     else {
+//       DFS(L - 1);
+//       console.log(L);
+//     }
+//   };
 
-// }
-// console.log(solution())
+//   DFS(n);
+// };
 // #endregion
 
 // #region - Ch.08 - 02. 이진수 출력(재귀)
 // const solution = () => {
-
-// }
-// console.log(solution())
+// };
 // #endregion
 
 // #region - Ch.08 - 03. 이진트리순회(DFS: 깊이우선탐색)
