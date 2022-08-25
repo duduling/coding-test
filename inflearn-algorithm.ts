@@ -1199,10 +1199,16 @@
 // #endregion
 
 // #region - Ch.08 - 03. 이진트리순회(DFS: 깊이우선탐색)
-// const solution = () => {
-
-// }
-// console.log(solution())
+const solution = (n: number): void => {
+  const DFS = (v: number): void => {
+    if (v <= 7) {
+      console.log(v);
+      DFS(v * 2);
+      DFS(v * 2 + 1);
+    } else return;
+  };
+  DFS(n);
+};
 // #endregion
 
 // #region - Ch.08 - 04. 부분집합 구하기(이진트리 DFS)
