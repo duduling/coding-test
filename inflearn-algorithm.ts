@@ -1275,10 +1275,28 @@
 // #endregion
 
 // #region - Ch.08 - 07. 최대점수 구하기(이진트리 DFS)
-// const solution = () => {
+// const solution = (
+//   limitTime: number,
+//   tableList: Array<Array<number>>
+// ): number => {
+//   let bestScore = 0;
+//   const tableListLength: number = tableList.length;
 
-// }
-// console.log(solution())
+//   (function DFS(L: number, sumScore: number, time: number) {
+//     if (limitTime < time) return;
+
+//     if (tableListLength <= L) {
+//       bestScore = Math.max(bestScore, sumScore);
+//     } else {
+//       const [point, estimatedTime] = tableList[L];
+
+//       DFS(L + 1, sumScore + point, time + estimatedTime);
+//       DFS(L + 1, sumScore, time);
+//     }
+//   })(0, 0, 0);
+
+//   return bestScore;
+// };
 // #endregion
 
 // #region - Ch.08 - 08. 중복순열(다중 for문과 재귀의 차이점)
