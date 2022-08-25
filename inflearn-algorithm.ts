@@ -1234,10 +1234,25 @@
 // #endregion
 
 // #region - Ch.08 - 05. 합이 같은 부분집합(이진트리 DFS)
-// const solution = () => {
+// const solution = (arr: Array<number>): string => {
+//   let answer: string = "NO";
+//   const goalSum: number = arr.reduce((acc, cur) => acc + cur, 0) / 2;
 
-// }
-// console.log(solution())
+//   const DFS = (L: number, sum: number): void => {
+//     if (answer === "YES") return;
+
+//     if (L === 6) {
+//       if (sum === goalSum) answer = "YES";
+//     } else {
+//       DFS(L + 1, sum + arr[L]);
+//       DFS(L + 1, sum);
+//     }
+//   };
+
+//   DFS(0, 0);
+
+//   return answer;
+// };
 // #endregion
 
 // #region - Ch.08 - 06. 바둑이 승차(이진트리 DFS)
