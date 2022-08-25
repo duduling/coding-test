@@ -1256,10 +1256,22 @@
 // #endregion
 
 // #region - Ch.08 - 06. 바둑이 승차(이진트리 DFS)
-// const solution = () => {
+// const solution = (maxWeight: number, dogWeightList: Array<number>): number => {
+//   let answer = 0;
 
-// }
-// console.log(solution())
+//   (function DFS(idx: number, sum: number) {
+//     if (maxWeight < sum) return;
+
+//     if (dogWeightList.length <= idx) {
+//       answer = Math.max(answer, sum);
+//     } else {
+//       DFS(idx + 1, sum + dogWeightList[idx]);
+//       DFS(idx + 1, sum);
+//     }
+//   })(0, 0);
+
+//   return answer;
+// };
 // #endregion
 
 // #region - Ch.08 - 07. 최대점수 구하기(이진트리 DFS)
