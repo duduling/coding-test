@@ -1199,23 +1199,38 @@
 // #endregion
 
 // #region - Ch.08 - 03. 이진트리순회(DFS: 깊이우선탐색)
-const solution = (n: number): void => {
-  const DFS = (v: number): void => {
-    if (v <= 7) {
-      console.log(v);
-      DFS(v * 2);
-      DFS(v * 2 + 1);
-    } else return;
-  };
-  DFS(n);
-};
+// const solution = (n: number): void => {
+//   const DFS = (v: number): void => {
+//     if (v <= 7) {
+//       console.log(v);
+//       DFS(v * 2);
+//       DFS(v * 2 + 1);
+//     } else return;
+//   };
+//   DFS(n);
+// };
 // #endregion
 
 // #region - Ch.08 - 04. 부분집합 구하기(이진트리 DFS)
-// const solution = () => {
+// const solution = (n: number): Array<string> => {
+//   const answer: Array<string> = [];
+//   const checkList: Array<number> = Array.from({ length: n + 1 }, () => null);
+//   const DFS = (v: number): void => {
+//     if (v === n + 1) {
+//       const temp = checkList.filter((value) => value).join(" ");
 
-// }
-// console.log(solution())
+//       if (temp) answer.push(temp);
+//     } else {
+//       checkList[v] = v;
+//       DFS(v + 1);
+//       checkList[v] = null;
+//       DFS(v + 1);
+//     }
+//   };
+//   DFS(1);
+
+//   return answer;
+// };
 // #endregion
 
 // #region - Ch.08 - 05. 합이 같은 부분집합(이진트리 DFS)
