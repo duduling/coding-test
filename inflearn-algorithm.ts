@@ -1183,7 +1183,18 @@
 // #endregion
 
 // #region - Ch.08 - 02. 이진수 출력(재귀)
-// const solution = () => {
+// const solution = (n: number): string => {
+//   let answer: string = "";
+
+//   const DFS = (L: number): void => {
+//     if (0 < L) {
+//       DFS(Math.floor(L / 2));
+//       answer += L % 2;
+//     } else return;
+//   };
+//   DFS(n);
+
+//   return answer;
 // };
 // #endregion
 
