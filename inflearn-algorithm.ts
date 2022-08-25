@@ -1165,3 +1165,211 @@
 // #endregion
 
 // #endregion
+
+// #region - Ch.08 - 재귀함수와 완전탐색(DFS:깊이우선탐색)
+
+// #region - Ch.08 - 01. 재귀함수와 스택프레임(중요)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 02. 이진수 출력(재귀)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 03. 이진트리순회(DFS: 깊이우선탐색)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 04. 부분집합 구하기(이진트리 DFS)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 05. 합이 같은 부분집합(이진트리 DFS)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 06. 바둑이 승차(이진트리 DFS)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 07. 최대점수 구하기(이진트리 DFS)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 08. 중복순열(다중 for문과 재귀의 차이점)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 09. 동전교환(DFS-Cut Edge Tech)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 10. 순열 구하기
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 11. 팩토리얼
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 12. 조합수(메모이제이션)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 13. 수열 추측하기(순열, 이항계수 응용)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 14. 조합 구하기(중요)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.08 - 15. 수들의 조합
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #endregion
+
+// #region - Ch.09 - 그래프와 탐색(DFS, BFS:넓이우선탐색)
+
+// #region - Ch.09 - 01. 그래프와 인접행렬
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.09 - 02. 경로탐색(DFS-인접행렬 : 노드개수가 적을 때)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.09 - 03. 경로탐색(DFS-인접리스트 : 노드개수가 많을 때 적용)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.09 - 04. 미로탐색
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.09 - 05. 이진트리 넓이우선탐색(BFS)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.09 - 06. 송아지 찾기(BFS)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.09 - 07 - 1. 섬나라 아일랜드(DFS)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.09 - 07 - 2. 섬나라 아일랜드(BFS : 넓이우선탐색)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #endregion
+
+// #region - Ch.10 - Dynamic programming(동적계획법 )
+
+// #region - Ch.10 - 01. 계단오르기
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.10 - 02. 돌다리 건너기
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.10 - 03. 최대부분증가수열(LIS)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.10 - 04. 동전교환(냅색 알고리즘)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.10 - 05. 최대점수 구하기(냅색을 이용한 조합)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #endregion
