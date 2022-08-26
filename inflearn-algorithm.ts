@@ -1378,30 +1378,64 @@
 // #endregion
 
 // #region - Ch.08 - 12. 조합수(메모이제이션)
-const solution = (n: number, r: number): number => {
-  const cacheArr: Array<Array<number>> = Array.from({ length: n + 1 }, () =>
-    Array.from({ length: r + 1 }, () => 0)
-  );
+// const solution = (n: number, r: number): number => {
+//   const cacheArr: Array<Array<number>> = Array.from({ length: n + 1 }, () =>
+//     Array.from({ length: r + 1 }, () => 0)
+//   );
 
-  return (function DFS(tempN: number, tempR: number): number {
-    if (cacheArr[tempN][tempR]) return cacheArr[tempN][tempR];
+//   return (function DFS(tempN: number, tempR: number): number {
+//     if (cacheArr[tempN][tempR]) return cacheArr[tempN][tempR];
 
-    if (tempN === tempR || tempR === 0) return 1;
-    else {
-      const tempValue = DFS(tempN - 1, tempR - 1) + DFS(tempN - 1, tempR);
+//     if (tempN === tempR || tempR === 0) return 1;
+//     else {
+//       const tempValue = DFS(tempN - 1, tempR - 1) + DFS(tempN - 1, tempR);
 
-      cacheArr[tempN][tempR] = tempValue;
-      return tempValue;
-    }
-  })(n, r);
-};
+//       cacheArr[tempN][tempR] = tempValue;
+//       return tempValue;
+//     }
+//   })(n, r);
+// };
 // #endregion
 
 // #region - Ch.08 - 13. 수열 추측하기(순열, 이항계수 응용)
-// const solution = () => {
+// const solution = (n: number, m: number): Array<number> => {
+//   const answer: Array<number> = [];
 
-// }
-// console.log(solution())
+//   const cacheArr: Array<number> = Array.from({ length: 11 }, () => 0);
+
+//   const checkArr: Array<number> = Array.from({ length: n + 1 }, () => 0);
+//   const tempAnswer: Array<number> = Array.from({ length: n }, () => 0);
+//   const combiResult: Array<number> = Array.from({ length: n }, () => 0);
+
+//   function combi(n: number, r: number): number {
+//     if (cacheArr[n][r]) return cacheArr[n][r];
+
+//     if (n === r || r === 0) return 1;
+//     else return (cacheArr[n][r] = combi(n - 1, r - 1) + combi(n - 1, r));
+//   }
+
+//   for (let i = 0; i < n; i++) combiResult[i] = combi(n - 1, i);
+
+//   (function DFS(L: number, sum: number) {
+//     if (answer.length) return;
+
+//     if (L === n && sum === m) {
+//       answer.push(...tempAnswer);
+//     } else {
+//       for (let i = 1; i <= n; i++) {
+//         if (checkArr[i] === 0) {
+//           checkArr[i] = 1;
+//           tempAnswer[L] = i;
+//           DFS(L + 1, sum + tempAnswer[L] * combiResult[L]);
+
+//           checkArr[i] = 0;
+//         }
+//       }
+//     }
+//   })(0, 0);
+
+//   return answer;
+// };
 // #endregion
 
 // #region - Ch.08 - 14. 조합 구하기(중요)
