@@ -1439,10 +1439,22 @@
 // #endregion
 
 // #region - Ch.08 - 14. 조합 구하기(중요)
-// const solution = () => {
+// const solution = (n: number, m: number): number => {
+//   const answer: Array<Array<number>> = [];
+//   const tempArr: Array<number> = Array.from({ length: m }, () => 0);
 
-// }
-// console.log(solution())
+//   (function DFS(L: number, idx: number) {
+//     if (L === m) answer.push([...tempArr]);
+//     else {
+//       for (let i = idx; i <= n; i++) {
+//         tempArr[L] = i;
+//         DFS(L + 1, i + 1);
+//       }
+//     }
+//   })(0, 1);
+
+//   return answer.length;
+// };
 // #endregion
 
 // #region - Ch.08 - 15. 수들의 조합
