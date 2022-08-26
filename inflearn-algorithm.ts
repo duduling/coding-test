@@ -1300,10 +1300,24 @@
 // #endregion
 
 // #region - Ch.08 - 08. 중복순열(다중 for문과 재귀의 차이점)
-// const solution = () => {
+// const solution = (n: number, m: number): number => {
+//   let answer: Array<Array<number>> = [];
+//   const tmp: Array<number> = [];
 
-// }
-// console.log(solution())
+//   (function DFS(L: number): void {
+//     if (L === m) {
+//       console.log([...tmp]);
+//       answer.push([...tmp]);
+//     } else {
+//       for (let i = 1; i <= n; i++) {
+//         tmp[L] = i;
+//         DFS(L + 1);
+//       }
+//     }
+//   })(0);
+
+//   return answer.length;
+// };
 // #endregion
 
 // #region - Ch.08 - 09. 동전교환(DFS-Cut Edge Tech)
