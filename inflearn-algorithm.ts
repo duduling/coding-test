@@ -1321,10 +1321,23 @@
 // #endregion
 
 // #region - Ch.08 - 09. 동전교환(DFS-Cut Edge Tech)
-// const solution = () => {
+// const solution = (coinLsit: Array<number>, change: number): number => {
+//   let answer: number = Number.MAX_SAFE_INTEGER;
 
-// }
-// console.log(solution())
+//   (function DFS(L: number, sumMoney: number): void {
+//     if (change < sumMoney) return;
+
+//     if (change === sumMoney) {
+//       answer = Math.min(answer, L);
+//     } else {
+//       for (const coin of coinLsit) {
+//         DFS(L + 1, sumMoney + coin);
+//       }
+//     }
+//   })(0, 0);
+
+//   return answer;
+// };
 // #endregion
 
 // #region - Ch.08 - 10. 순열 구하기
