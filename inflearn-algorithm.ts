@@ -1259,7 +1259,7 @@
 // const solution = (maxWeight: number, dogWeightList: Array<number>): number => {
 //   let answer = 0;
 
-//   (function DFS(idx: number, sum: number) {
+//   (function DFS(idx: number, sum: number):void {
 //     if (maxWeight < sum) return;
 
 //     if (dogWeightList.length <= idx) {
@@ -1282,7 +1282,7 @@
 //   let bestScore = 0;
 //   const tableListLength: number = tableList.length;
 
-//   (function DFS(L: number, sumScore: number, time: number) {
+//   (function DFS(L: number, sumScore: number, time: number): void {
 //     if (limitTime < time) return;
 
 //     if (tableListLength <= L) {
@@ -1306,8 +1306,8 @@
 
 //   (function DFS(L: number): void {
 //     if (L === m) {
-//       console.log([...tmp]);
-//       answer.push([...tmp]);
+//       console.log(tmp);
+//       answer.push(tmp);
 //     } else {
 //       for (let i = 1; i <= n; i++) {
 //         tmp[L] = i;
@@ -1341,10 +1341,33 @@
 // #endregion
 
 // #region - Ch.08 - 10. 순열 구하기
-// const solution = () => {
+// const solution = (n: number, arr: Array<number>): number => {
+//   let answer: Array<Array<number>> = [];
+//   const tmp: Array<number> = Array.from({ length: n }, () => 0);
+//   const tmpCheckList: Array<number> = Array.from(
+//     { length: arr.length },
+//     () => 0
+//   );
 
-// }
-// console.log(solution())
+//   (function DFS(L: number): void {
+//     if (n === L) {
+//       console.log(tmp);
+//       answer.push(tmp);
+//     } else {
+//       for (let i = 0; i < arr.length; i++) {
+//         if (tmpCheckList[i] === 0) {
+//           tmpCheckList[i] = 1;
+//           tmp[L] = arr[i];
+//           DFS(L + 1);
+//           tmpCheckList[i] = 0;
+//         }
+//       }
+//     }
+//   })(0);
+
+//   return answer.length;
+// };
+// console.log(solution(2, [3, 6, 9]));
 // #endregion
 
 // #region - Ch.08 - 11. 팩토리얼
