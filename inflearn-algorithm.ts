@@ -1378,10 +1378,23 @@
 // #endregion
 
 // #region - Ch.08 - 12. 조합수(메모이제이션)
-// const solution = () => {
+const solution = (n: number, r: number): number => {
+  const cacheArr: Array<Array<number>> = Array.from({ length: n + 1 }, () =>
+    Array.from({ length: r + 1 }, () => 0)
+  );
 
-// }
-// console.log(solution())
+  return (function DFS(tempN: number, tempR: number): number {
+    if (cacheArr[tempN][tempR]) return cacheArr[tempN][tempR];
+
+    if (tempN === tempR || tempR === 0) return 1;
+    else {
+      const tempValue = DFS(tempN - 1, tempR - 1) + DFS(tempN - 1, tempR);
+
+      cacheArr[tempN][tempR] = tempValue;
+      return tempValue;
+    }
+  })(n, r);
+};
 // #endregion
 
 // #region - Ch.08 - 13. 수열 추측하기(순열, 이항계수 응용)
