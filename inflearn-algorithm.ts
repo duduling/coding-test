@@ -1371,10 +1371,10 @@
 // #endregion
 
 // #region - Ch.08 - 11. 팩토리얼
-// const solution = () => {
-
-// }
-// console.log(solution())
+// const solution = (n: number): number => {
+//   return 1 < n ? n * solution(n - 1) : n;
+// };
+// console.log(solution(5));
 // #endregion
 
 // #region - Ch.08 - 12. 조합수(메모이제이션)
