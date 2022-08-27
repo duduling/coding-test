@@ -1630,10 +1630,32 @@
 // #endregion
 
 // #region - Ch.09 - 06. 송아지 찾기(BFS)
-// const solution = () => {
+// const solution = (myPoint: number, cowPoint: number): number => {
+//   let answer: number = 0;
+//   const checkArr: Array<number> = Array.from({ length: 10001 }, () => 0);
 
+//   const queue: Array<number> = [myPoint];
+//   while (queue.length) {
+//     const len: number = queue.length;
+
+//     for (let i = 0; i < len; i++) {
+//       const parnetVertex = queue.shift();
+//       for (const curVertex of [
+//         parnetVertex - 1,
+//         parnetVertex + 1,
+//         parnetVertex + 5,
+//       ]) {
+//         if (curVertex === cowPoint) return answer + 1;
+
+//         if (0 < curVertex && curVertex <= 10000 && checkArr[curVertex] === 0) {
+//           checkArr[curVertex] = 1;
+//           queue.push(curVertex);
+//         }
+//       }
+//     }
+//     answer++;
+//   }
 // };
-// console.log(solution())
 // #endregion
 
 // #region - Ch.09 - 07. 섬나라 아일랜드(DFS)
