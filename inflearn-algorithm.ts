@@ -1698,10 +1698,47 @@
 // #endregion
 
 // #region - Ch.09 - 07. 섬나라 아일랜드(BFS : 넓이우선탐색)
-// const solution = () => {
+// const solution = (multipleArr: Array<Array<number>>): number => {
+//   let answer: number = 0;
+//   let n: number = multipleArr.length;
 
-// }
-// console.log(solution())
+//   const dx: Array<number> = [0, 1, 1, 1, 0, -1, -1, -1];
+//   const dy: Array<number> = [1, 1, 0, -1, -1, -1, 0, 1];
+
+//   const queue: Array<Array<number>> = [];
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < n; j++) {
+//       if (multipleArr[i][j] === 1) {
+//         multipleArr[i][j] = 0;
+//         queue.push([i, j]);
+
+//         while (queue.length) {
+//           const [curX, curY] = queue.shift();
+//           for (let k = 0; k < 8; k++) {
+//             const moveX = curX - dx[k];
+//             const moveY = curY - dy[k];
+
+//             if (
+//               0 <= moveX &&
+//               moveX < n &&
+//               0 <= moveY &&
+//               moveY < n &&
+//               multipleArr[moveX][moveY] === 1
+//             ) {
+//               multipleArr[moveX][moveY] = 0;
+//               queue.push([moveX, moveY]);
+//             }
+//           }
+//         }
+//         answer++;
+//       }
+//     }
+//   }
+
+//   return answer;
+// };
+// #endregion
+
 // #endregion
 
 // #region - Ch.10 - Dynamic programming(동적계획법 )
