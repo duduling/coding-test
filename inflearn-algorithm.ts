@@ -1515,10 +1515,34 @@
 // #endregion
 
 // #region - Ch.09 - 03. 경로탐색(DFS-인접리스트 : 노드개수가 많을 때 적용)
-// const solution = () => {
+// const solution = (n: number, multipleArr: Array<Array<number>>): number => {
+//   let answer: number = 0;
+//   const graphArr: Array<Array<number>> = Array.from(
+//     { length: n + 1 },
+//     () => []
+//   );
+//   const checkArr: Array<number> = Array.from({ length: n + 1 }, () => 0);
+//   checkArr[1] = 1;
 
-// }
-// console.log(solution())
+//   multipleArr.forEach(([x, y]) => {
+//     graphArr[x].push(y);
+//   });
+
+//   (function DFS(v: number): void {
+//     if (v === n) answer++;
+//     else {
+//       for (let i = 0; i <= graphArr[v].length; i++) {
+//         if (checkArr[graphArr[v][i]] === 0) {
+//           checkArr[graphArr[v][i]] = 1;
+//           DFS(graphArr[v][i]);
+//           checkArr[graphArr[v][i]] = 0;
+//         }
+//       }
+//     }
+//   })(1);
+
+//   return answer;
+// };
 // #endregion
 
 // #region - Ch.09 - 04. 미로탐색
