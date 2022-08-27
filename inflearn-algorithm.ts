@@ -1546,11 +1546,40 @@
 // #endregion
 
 // #region - Ch.09 - 04. 미로탐색
-// const solution = () => {
+// const solution = (multipleArr: Array<Array<number>>): number => {
+//   let answer: number = 0;
+//   const n = multipleArr.length;
 
-// }
-// console.log(solution())
-// #endregion
+//   multipleArr[0][0] = 1;
+
+//   const dx: Array<number> = [0, 1, 0, -1];
+//   const dy: Array<number> = [1, 0, -1, 0];
+
+//   (function DFS(x: number, y: number): void {
+//     if (x === n - 1 && y === n - 1) answer++;
+//     else {
+//       for (let i = 0; i < 4; i++) {
+//         const moveX: number = x + dx[i];
+//         const moveY: number = y + dy[i];
+
+//         if (
+//           0 <= moveX &&
+//           0 <= moveY &&
+//           moveX < n &&
+//           moveY < n &&
+//           multipleArr[moveX][moveY] === 0
+//         ) {
+//           multipleArr[moveX][moveY] = 1;
+//           DFS(moveX, moveY);
+//           multipleArr[moveX][moveY] = 0;
+//         }
+//       }
+//     }
+//   })(0, 0);
+
+//   return answer;
+// };
+//s #endregion
 
 // #region - Ch.09 - 05. 이진트리 넓이우선탐색(BFS)
 // const solution = () => {
