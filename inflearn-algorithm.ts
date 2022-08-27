@@ -1458,10 +1458,23 @@
 // #endregion
 
 // #region - Ch.08 - 15. 수들의 조합
-// const solution = () => {
+// const solution = (n: number, arr: Array<number>, m: number): number => {
+//   let answer: number = 0;
 
-// }
-// console.log(solution())
+//   (function DFS(L: number, idx: number, sum: number): void {
+//     if (L === n) {
+//       if (sum % m) return;
+
+//       answer++;
+//     } else {
+//       for (let i = idx; i < arr.length; i++) {
+//         DFS(L + 1, i + 1, sum + arr[i]);
+//       }
+//     }
+//   })(0, 0, 0);
+
+//   return answer;
+// };
 // #endregion
 
 // #endregion
@@ -1476,10 +1489,29 @@
 // #endregion
 
 // #region - Ch.09 - 02. 경로탐색(DFS-인접행렬 : 노드개수가 적을 때)
-// const solution = () => {
+// const solution = (n: number, multipleArr: Array<Array<number>>) => {
+//   let answer: number = 0;
+//   const graphArr: Array<Array<number>> = Array.from({ length: n + 1 }, () =>
+//     Array(n + 1).fill(0)
+//   );
+//   const checkArr = Array.from({ length: n + 1 }, () => 0);
+//   multipulArr.forEach(([x, y]) => (graphArr[x][y] = 1));
 
-// }
-// console.log(solution())
+//   (function DFS(v: number): void {
+//     if (v === n) answer++;
+//     else {
+//       for (let i = 2; i <= n; i++) {
+//         if (graphArr[v][i] === 1 && checkArr[i] === 0) {
+//           checkArr[i] = 1;
+//           DFS(i);
+//           checkArr[i] = 0;
+//         }
+//       }
+//     }
+//   })(1);
+
+//   return answer;
+// };
 // #endregion
 
 // #region - Ch.09 - 03. 경로탐색(DFS-인접리스트 : 노드개수가 많을 때 적용)
