@@ -1611,6 +1611,45 @@
 
 // #endregion
 
+// #region - Ch.09 - 05. 이진트리 넓이우선탐색(BFS)
+// const solution = () => {
+//   let answer: string = "";
+//   const queue: Array<number> = [1];
+
+//   while (queue.length) {
+//     const vertex = queue.shift();
+//     answer += `${vertex} `;
+//     for (const nv of [vertex * 2, vertex * 2 + 1]) {
+//       if (7 < nv) break;
+//       queue.push(nv);
+//     }
+//   }
+
+//   return answer;
+// };
+// #endregion
+
+// #region - Ch.09 - 06. 송아지 찾기(BFS)
+// const solution = () => {
+
+// };
+// console.log(solution())
+// #endregion
+
+// #region - Ch.09 - 07. 섬나라 아일랜드(DFS)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
+// #region - Ch.09 - 07. 섬나라 아일랜드(BFS : 넓이우선탐색)
+// const solution = () => {
+
+// }
+// console.log(solution())
+// #endregion
+
 // #region - Ch.10 - Dynamic programming(동적계획법 )
 
 // #region - Ch.10 - 01. 계단오르기
