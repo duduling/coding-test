@@ -1659,10 +1659,42 @@
 // #endregion
 
 // #region - Ch.09 - 07. 섬나라 아일랜드(DFS)
-// const solution = () => {
+// const solution = (multipleArr: Array<Array<number>>): number => {
+//   let answer = 0;
+//   const n = multipleArr.length;
 
-// }
-// console.log(solution())
+//   const dx: Array<number> = [0, 1, 1, 1, 0, -1, -1, -1];
+//   const dy: Array<number> = [1, 1, 0, -1, -1, -1, 0, 1];
+
+//   function DFS(x: number, y: number): void {
+//     multipleArr[x][y] = 0;
+//     for (let k = 0; k < 8; k++) {
+//       const moveX = x + dx[k];
+//       const moveY = y + dy[k];
+
+//       if (
+//         0 <= moveX &&
+//         moveX < n &&
+//         0 <= moveY &&
+//         moveY < n &&
+//         multipleArr[moveX][moveY] === 1
+//       ) {
+//         DFS(moveX, moveY);
+//       }
+//     }
+//   }
+
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < n; j++) {
+//       if (multipleArr[i][j] === 1) {
+//         answer++;
+//         DFS(i, j);
+//       }
+//     }
+//   }
+
+//   return answer;
+// };
 // #endregion
 
 // #region - Ch.09 - 07. 섬나라 아일랜드(BFS : 넓이우선탐색)
