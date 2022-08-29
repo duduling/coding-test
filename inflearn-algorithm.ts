@@ -1792,10 +1792,19 @@
 // #endregion
 
 // #region - Ch.10 - 04. 동전교환(냅색 알고리즘)
-// const solution = () => {
+// const solution = (coinList: Array<number>, change: number): number => {
+//   const dy: Array<number> = Array.from({ length: change + 1 }, () => 100);
+//   dy[0] = 0;
 
-// }
-// console.log(solution())
+//   for (let i = 0; i < coinList.length; i++) {
+//     const curCoin: number = coinList[i];
+//     for (let j = curCoin; j <= change; j++) {
+//       dy[j] = Math.min(dy[j], dy[j - curCoin] + 1);
+//     }
+//   }
+
+//   return dy[change];
+// };
 // #endregion
 
 // #region - Ch.10 - 05. 최대점수 구하기(냅색을 이용한 조합)
