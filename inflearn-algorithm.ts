@@ -1808,10 +1808,20 @@
 // #endregion
 
 // #region - Ch.10 - 05. 최대점수 구하기(냅색을 이용한 조합)
-// const solution = () => {
+// const solution = (n: number, arr: Array<Array<number>>) => {
+//   const dy: Array<number> = Array.from({ length: n + 1 }, () => 0);
+//   dy[0] = 0;
 
-// }
-// console.log(solution())
+//   for (let i = 0; i < arr.length; i++) {
+//     const [point, time] = arr[i];
+
+//     for (let j = time; j <= n; j++) {
+//       dy[j] = Math.max(dy[j], dy[j - time] + point);
+//     }
+//   }
+
+//   return dy[n];
+// };
 // #endregion
 
 // #endregion
