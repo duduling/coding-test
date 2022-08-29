@@ -1758,10 +1758,19 @@
 // #endregion
 
 // #region - Ch.10 - 02. 돌다리 건너기
-// const solution = () => {
+// const solution = (n: number): number => {
+//   const goal: number = n + 1;
 
-// }
-// console.log(solution())
+//   const dy: Array<number> = Array.from({ length: goal + 1 }, () => 0);
+//   dy[1] = 1;
+//   dy[2] = 2;
+
+//   for (let i = 3; i <= goal; i++) {
+//     dy[i] = dy[i - 2] + dy[i - 1];
+//   }
+
+//   return dy[goal];
+// };
 // #endregion
 
 // #region - Ch.10 - 03. 최대부분증가수열(LIS)
