@@ -1774,10 +1774,21 @@
 // #endregion
 
 // #region - Ch.10 - 03. 최대부분증가수열(LIS)
-// const solution = () => {
+// const solution = (arr: Array<number>): number => {
+//   const dy: Array<number> = Array.from({ length: arr.length }, () => 1);
 
-// }
-// console.log(solution())
+//   for (let i = 1; i < arr.length; i++) {
+//     let max = 0;
+//     for (let j = 1; j < i; j++) {
+//       if (arr[i - j] < arr[i]) {
+//         max = Math.max(max, dy[i - j]);
+//       }
+//     }
+//     dy[i] = max + 1;
+//   }
+
+//   return Math.max(...dy);
+// };
 // #endregion
 
 // #region - Ch.10 - 04. 동전교환(냅색 알고리즘)
