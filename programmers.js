@@ -32,4 +32,10 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 하샤드 수
+// function solution(x) {
+//   return !(x % `${x}`.split("").reduce((acc, cur) => acc + Number(cur), 0));
+// }
+// #endregion
+
 // #endregion
