@@ -52,4 +52,29 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 최대공약수와 최소공배수
+// function gcd(a, b) {
+//   if (b === 0) return a;
+
+//   return gcd(b, a % b);
+// }
+
+// function lcm(a, b, gcd) {
+//   return (a * b) / gcd;
+// }
+
+// function solution(n, m) {
+//   const curGcd = gcd(n, m);
+//   const curLcm = lcm(n, m, curGcd);
+
+//   return [curGcd, curLcm];
+// }
+
+// 유클리드 호제법
+// - a,b 를 서로 나눌때, 나누어진다면 b가 최대 공약수 이다. (a > b)
+// - 만약 a,b가 나누어지지 않으면 b와 a를 b로 나눈 나머지를 다시 나눈다
+// - 서로가 나누어지면 a%b 가 최대공약수이다. 나누어지지 않는다면 위처럼 b와 a를 b를 나눈 나머지를 다시 나눈다.
+
+// #endregion
+
 // #endregion
