@@ -45,11 +45,10 @@
 // #endregion
 
 // #regioin - Lv1 - 콜라츠 추측
-// function solution(num, count = 1) {
-//   if (500 < count) return -1;
+// function solution(num, cnt = 0) {
+//   if (num === 1) return 500 <= cnt ? -1 : cnt;
 
-//   const tmp = num % 2 === 0 ? num / 2 : num * 3 + 1;
-//   return tmp === 1 ? count : solution(tmp, ++count);
+//   return solution(num % 2 === 0 ? num / 2 : num * 3 + 1, ++cnt);
 // }
 // #endregion
 
