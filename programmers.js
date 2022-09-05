@@ -119,4 +119,19 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 자연수 뒤집어 배열로 만들기
+// function solution(n) {
+//   return `${n}`
+//     .split("")
+//     .reverse()
+//     .map((str) => Number(str));
+// }
+// #endregion
+
+// #regioin - Lv1 - 자릿수 더하기
+// function solution(n) {
+//   return `${n}`.split("").reduce((acc, cur) => acc + Number(cur), 0);
+// }
+// #endregion
+
 // #endregion
