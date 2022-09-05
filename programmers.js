@@ -187,4 +187,10 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 수박수박수박수박수박수?
+// function solution(n) {
+//   return "수박".repeat(n / 2) + (n % 2 ? "수" : "");
+// }
+// #endregion
+
 // #endregion
