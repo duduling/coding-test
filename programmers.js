@@ -193,4 +193,23 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 소수 찾기
+// function solution(n) {
+//   const answer = new Set();
+
+//   for (let i = 2, num = i * i; num < n; i++, num = i * i) {
+//     if (!answer.has(i)) {
+//       for (let l = num; l <= n; l += i) {
+//         answer.add(l);
+//       }
+//     }
+//   }
+
+//   return n - (answer.size + 1);
+// }
+
+// 소인수분해 활용
+
+// #endregion
+
 // #endregion
