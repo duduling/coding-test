@@ -232,4 +232,34 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 문자열 내 p와 y의 개수
+// function solution(s) {
+//   const answer = {
+//     p: 0,
+//     y: 0,
+//   };
+
+//   for (const char of s.toLowerCase()) {
+//     if (char === "p" || char === "y") answer[char] += 1;
+//   }
+
+//   return answer.p === answer.y;
+// }
+// #endregion
+
+// #regioin - Lv1 - 문자열 내 마음대로 정렬하기
+// function solution(strings, n) {
+//   return strings.sort((a, b) =>
+//     a[n] === b[n] ? (a > b ? 1 : -1) : a[n] > b[n] ? 1 : -1
+//   );
+// }
+
+// 신박한 함수 -> localeCompare
+// function solution(strings, n) {
+//   return strings.sort((a, b) =>
+//     a[n] === b[n] ? a.localeCompare(b) : a[n].localeCompare(b[n])
+//   );
+// }
+// #endregion
+
 // #endregion
