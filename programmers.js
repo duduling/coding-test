@@ -95,8 +95,18 @@
 // #regioin - Lv1 - 정수 제곱근 판별
 // function solution(n) {
 //   const tmp = Math.sqrt(n);
-
 //   return Number.isInteger(tmp) ? Math.pow(tmp + 1, 2) : -1;
+// }
+// #endregion
+
+// #regioin - Lv1 - 정수 내림차순으로 배치하기
+// function solution(n) {
+//   return Number(
+//     `${n}`
+//       .split("")
+//       .sort((a, b) => b - a)
+//       .join("")
+//   );
 // }
 // #endregion
 
