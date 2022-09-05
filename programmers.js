@@ -134,4 +134,21 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 이상한 문자 만들기
+// function solution(s) {
+//   return s
+//     .toLowerCase()
+//     .split(" ")
+//     .map((curStr) => {
+//       let tmpStr = "";
+
+//       for (let i = 1; i <= curStr.length; i++)
+//         tmpStr += i % 2 ? curStr[i - 1].toUpperCase() : curStr[i - 1];
+
+//       return tmpStr;
+//     })
+//     .join(" ");
+// }
+// #endregion
+
 // #endregion
