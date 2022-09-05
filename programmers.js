@@ -209,7 +209,12 @@
 // }
 
 // 소인수분해 활용
+// #endregion
 
+// #regioin - Lv1 - 서울에서 김서방 찾기
+// function solution(seoul) {
+//   return `김서방은 ${seoul.indexOf("Kim")}에 있다`;
+// }
 // #endregion
 
 // #endregion
