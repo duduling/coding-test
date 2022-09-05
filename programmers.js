@@ -151,4 +151,34 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 약수의 합
+// function solution(n) {
+//   let answer = 0;
+
+//   for (let i = 1; i <= n; i++) {
+//     if (n % i === 0) answer += i;
+//   }
+
+//   return answer;
+// }
+// #endregion
+
+// #regioin - Lv1 - 시저 암호
+// function solution(s, n) {
+//   let answer = "";
+
+//   for (const char of s) {
+//     if (char === " ") answer += " ";
+//     else {
+//       const boundary = char < "a" ? 65 : 97;
+
+//       answer += String.fromCharCode(
+//         ((char.charCodeAt() - boundary + n) % 26) + boundary
+//       );
+//     }
+//   }
+//   return answer;
+// }
+// #endregion
+
 // #endregion
