@@ -92,4 +92,12 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 정수 제곱근 판별
+// function solution(n) {
+//   const tmp = Math.sqrt(n);
+
+//   return Number.isInteger(tmp) ? Math.pow(tmp + 1, 2) : -1;
+// }
+// #endregion
+
 // #endregion
