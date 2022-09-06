@@ -276,4 +276,8 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 상위 n개 레코드
+// SELECT NAME from ANIMAL_INS ORDER BY DATETIME ASC LIMIT 1
+// #endregion
+
 // #endregion
