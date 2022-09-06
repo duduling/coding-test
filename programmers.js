@@ -280,4 +280,8 @@
 // SELECT NAME from ANIMAL_INS ORDER BY DATETIME ASC LIMIT 1
 // #endregion
 
+// #regioin - Lv1 - 여러 기준으로 정렬하기
+// SELECT ANIMAL_ID, NAME, DATETIME from ANIMAL_INS ORDER BY NAME ASC, DATETIME DESC
+// #endregion
+
 // #endregion
