@@ -268,4 +268,12 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 나누어 떨어지는 숫자 배열
+// function solution(arr, divisor) {
+//   const answer = arr.filter((num) => num % divisor === 0).sort((a, b) => a - b);
+
+//   return answer.length ? answer : [-1];
+// }
+// #endregion
+
 // #endregion
