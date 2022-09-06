@@ -302,4 +302,16 @@
 // SELECT ANIMAL_ID, NAME from ANIMAL_INS ORDER BY ANIMAL_ID ASC
 // #endregion
 
+// #regioin - Lv1 - 나머지가 1이 되는 수 찾기
+// function solution(n) {
+//   for (let i = 2; i < n; i++) {
+//     if (n % i === 1) return i;
+//   }
+// }
+// #endregion
+
+// #regioin - Lv1 - 어린 동물 찾기
+// SELECT ANIMAL_ID, NAME from ANIMAL_INS WHERE INTAKE_CONDITION != "Aged" ORDER BY ANIMAL_ID ASC
+// #endregion
+
 // #endregion
