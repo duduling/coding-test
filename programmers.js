@@ -284,4 +284,18 @@
 // SELECT ANIMAL_ID, NAME, DATETIME from ANIMAL_INS ORDER BY NAME ASC, DATETIME DESC
 // #endregion
 
+// #regioin - Lv1 - 가운데 글자 가져오기
+// function solution(s) {
+//   const targerIdx = Math.floor(s.length / 2);
+
+//   return s.length % 2 ? s[targerIdx] : s[targerIdx - 1] + s[targerIdx];
+// }
+// #endregion
+
+// #regioin - Lv1 - 부족한 금액 계산하기
+// function solution(price, money, count) {
+//   return Math.max(((price + price * count) * count) / 2 - money, 0);
+// }
+// #endregion
+
 // #endregion
