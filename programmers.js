@@ -314,4 +314,21 @@
 // SELECT ANIMAL_ID, NAME from ANIMAL_INS WHERE INTAKE_CONDITION != "Aged" ORDER BY ANIMAL_ID ASC
 // #endregion
 
+// #regioin - Lv1 - [1차] 비밀지도
+// function solution(n, arr1, arr2) {
+//   const answer = [];
+
+//   for (let i = 0; i < n; i++) {
+//     answer.push(
+//       (arr1[i] | arr2[i])
+//         .toString(2)
+//         .padStart(n, "0")
+//         .replace(/0|1/g, (char) => (char === "1" ? "#" : " "))
+//     );
+//   }
+
+//   return answer;
+// }
+// #endregion
+
 // #endregion
