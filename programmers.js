@@ -381,18 +381,31 @@
 // #endregion
 
 // #regioin - Lv1 - 3진법 뒤집기
-function solution(n) {
-  const tmp = n.toString(3);
+// function solution(n) {
+//   const tmp = n.toString(3);
 
-  let answer = Number(tmp[0]);
+//   let answer = Number(tmp[0]);
 
-  for (let i = 1; i < tmp.length; i++) {
-    if (i === "0") continue;
-    answer += Number(tmp[i]) * 3 ** i;
-  }
+//   for (let i = 1; i < tmp.length; i++) {
+//     if (i === "0") continue;
+//     answer += Number(tmp[i]) * 3 ** i;
+//   }
 
-  return answer;
-}
+//   return answer;
+// }
+// #endregion
+
+// #regioin - Lv1 - 약수의 개수와 덧셈
+// function solution(left, right) {
+//   let answer = 0;
+
+//   for (let i = left; i <= right; i++) {
+//     if (Number.isInteger(Math.sqrt(i))) answer -= i;
+//     else answer += i;
+//   }
+
+//   return answer;
+// }
 // #endregion
 
 // #endregion
