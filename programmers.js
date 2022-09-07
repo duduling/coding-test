@@ -331,4 +331,34 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - [1차] 다트 게임
+// function solution(dartResult) {
+//   const OPTION_TABLE = {
+//     S: 1,
+//     D: 2,
+//     T: 3,
+//     "*": 2,
+//     "#": -1,
+//     undefined: 1,
+//   };
+
+//   const answer = [];
+
+//   //   라운드 분리
+//   const dartList = dartResult.match(/[0-9]{1,2}(S|D|T)(\*|#|)/g);
+
+//   //   라운드 정산
+//   dartList.forEach((dart, idx) => {
+//     const [point, round, option] = dart.match(/[0-9]{1,2}|(S|D|T)|(\*|#)/g);
+
+//     answer[idx] = point ** OPTION_TABLE[round] * OPTION_TABLE[option];
+
+//     if (option === "*" && answer[idx - 1]) answer[idx - 1] *= 2;
+//   });
+
+//   // 라운드 합산
+//   return answer.reduce((acc, cur) => acc + cur, 0);
+// }
+// #endregion
+
 // #endregion
