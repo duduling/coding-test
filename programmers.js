@@ -365,4 +365,19 @@
 // SELECT NAME, DATETIME from ANIMAL_INS ORDER BY ANIMAL_ID DESC
 // #endregion
 
+// #regioin - Lv1 - 예산
+// function solution(d, budget) {
+//   let answer = 0;
+
+//   const sortedD = d.sort((a, b) => a - b);
+//   for (let i = 0; i < sortedD.length; i++) {
+//     budget -= sortedD[i];
+//     if (budget < 0) break;
+
+//     ++answer;
+//   }
+//   return answer;
+// }
+// #endregion
+
 // #endregion
