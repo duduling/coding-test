@@ -380,4 +380,19 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 3진법 뒤집기
+function solution(n) {
+  const tmp = n.toString(3);
+
+  let answer = Number(tmp[0]);
+
+  for (let i = 1; i < tmp.length; i++) {
+    if (i === "0") continue;
+    answer += Number(tmp[i]) * 3 ** i;
+  }
+
+  return answer;
+}
+// #endregion
+
 // #endregion
