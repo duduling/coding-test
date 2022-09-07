@@ -361,4 +361,8 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 역순 정렬하기
+// SELECT NAME, DATETIME from ANIMAL_INS ORDER BY ANIMAL_ID DESC
+// #endregion
+
 // #endregion
