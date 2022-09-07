@@ -408,4 +408,25 @@
 // }
 // #endregion
 
+// #regioin - Lv1 - 실패율
+// function solution(N, stages) {
+//   let accObj = stages.reduce((acc, cur) => {
+//     if (cur <= N) acc[cur] = (acc[cur] || 0) + 1;
+
+//     return acc;
+//   }, {});
+
+//   let remainPeople = stages.length;
+//   for (let i = 1; i <= N; i++) {
+//     const tmp = accObj[i] || 0;
+//     accObj[i] = tmp / remainPeople;
+//     remainPeople -= tmp;
+//   }
+
+//   return Object.keys(accObj)
+//     .sort((a, b) => accObj[b] - accObj[a])
+//     .map((str) => Number(str));
+// }
+// #endregion
+
 // #endregion
