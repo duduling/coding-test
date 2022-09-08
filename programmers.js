@@ -628,4 +628,24 @@
 // }
 // #endregion
 
+// #region - Lv1 - 체육복
+// function solution(n, lost, reserve) {
+//   const students = Array(n + 1).fill(1);
+
+//   lost.forEach((lostIdx) => (students[lostIdx] -= 1));
+//   reserve.forEach((reserveIdx) => (students[reserveIdx] += 1));
+
+//   for (let i = 1; i <= n; i++) {
+//     if (students[i] === 2 && students[i - 1] === 0) {
+//       students[i - 1]++;
+//       students[i]--;
+//     } else if (students[i] === 2 && students[i + 1] === 0) {
+//       students[i + 1]++;
+//       students[i]--;
+//     }
+//   }
+
+//   return students.filter((student) => student).length - 1;
+// }
+// #endregion
 // #endregion
