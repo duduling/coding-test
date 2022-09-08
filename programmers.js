@@ -491,4 +491,18 @@
 // }
 // #endregion
 
+// #region - Lv1 - 최소직사각형
+// function solution(sizes) {
+//   const LongLineList = [];
+//   const shortLineList = [];
+
+//   for (let i = 0; i < sizes.length; i++) {
+//     const [longLine, shortLine] = sizes[i].sort((a, b) => b - a);
+//     LongLineList.push(longLine);
+//     shortLineList.push(shortLine);
+//   }
+
+//   return Math.max(...LongLineList) * Math.max(...shortLineList);
+// }
+// #endregion
 // #endregion
