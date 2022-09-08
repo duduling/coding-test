@@ -472,4 +472,10 @@
 //   return (9 * 10) / 2 - numbers.reduce((acc, cur) => acc + cur, 0);
 // }
 // #endregion
+
+// #region - Lv1 - 내적
+// function solution(a, b) {
+//   return a.reduce((acc, cur, idx) => acc + cur * b[idx], 0);
+// }
+// #endregion
 // #endregion
