@@ -541,4 +541,10 @@
 //   );
 // }
 // #endregion
+
+// #region - Lv1 - 폰켓몬
+// function solution(nums) {
+//   return Math.min(new Set(nums).size, Math.floor(nums.length / 2));
+// }
+// #endregion
 // #endregion
