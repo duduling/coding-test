@@ -577,4 +577,31 @@
 // }
 // #endregion
 
+// #region - Lv1 - 소수 만들기
+// function solution(nums) {
+//   // 소수를 구할 때 해당 수에 루트를 씌운 수까지만 하면 된다.
+//   // 소수 구하는 함수
+//   const isPrime = (num) => {
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//       if (num % i === 0) return false;
+//     }
+
+//     return true;
+//   };
+
+//   let answer = 0;
+
+//   (function DFS(L, vertex, sum) {
+//     if (L === 3) {
+//       if (isPrime(sum)) answer++;
+//     } else {
+//       for (let i = vertex; i < nums.length; i++) {
+//         DFS(L + 1, i + 1, sum + nums[i]);
+//       }
+//     }
+//   })(0, 0, 0);
+
+//   return answer;
+// }
+// #endregion
 // #endregion
