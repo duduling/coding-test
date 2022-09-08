@@ -663,4 +663,80 @@
 //   }
 // }
 // #endregion
+
+// #region - Lv1 - 키패드 누르기
+// function solution(numbers, hand) {
+//   // 번호판 좌표
+//   const NUMBER_TABLE = {
+//     1: [0, 0],
+//     2: [0, 1],
+//     3: [0, 2],
+//     4: [1, 0],
+//     5: [1, 1],
+//     6: [1, 2],
+//     7: [2, 0],
+//     8: [2, 1],
+//     9: [2, 2],
+//     "*": [3, 0],
+//     0: [3, 1],
+//     "#": [3, 2],
+//   };
+
+//   // 누적 값
+//   let answer = "";
+//   // 현재 손 위치
+//   const position = {
+//     L: "*",
+//     R: "#",
+//   };
+
+//   for (let i = 0; i < numbers.length; i++) {
+//     const targetNum = numbers[i];
+
+//     switch (targetNum) {
+//       // 왼손 번호
+//       case 1:
+//       case 4:
+//       case 7:
+//         answer += "L";
+//         position.L = targetNum;
+//         break;
+
+//       // 오른손 번호
+//       case 3:
+//       case 6:
+//       case 9:
+//         answer += "R";
+//         position.R = targetNum;
+//         break;
+
+//       // 가까운 손이 누르는 번호
+//       default:
+//         const [x, y] = NUMBER_TABLE[targetNum];
+//         const [xL, yL] = NUMBER_TABLE[position.L];
+//         const [xR, yR] = NUMBER_TABLE[position.R];
+
+//         // 거리 계산
+//         const distanceL = Math.abs(x - xL) + Math.abs(y - yL);
+//         const distanceR = Math.abs(x - xR) + Math.abs(y - yR);
+
+//         // 비교 후 손 이동
+//         if (distanceL === distanceR) {
+//           const upperHand = hand[0].toUpperCase();
+//           answer += upperHand;
+//           position[upperHand] = targetNum;
+//         } else if (distanceL > distanceR) {
+//           answer += "R";
+//           position.R = targetNum;
+//         } else if (distanceL < distanceR) {
+//           answer += "L";
+//           position.L = targetNum;
+//         }
+//         break;
+//     }
+//   }
+
+//   return answer;
+// }
+// #endregion
 // #endregion
