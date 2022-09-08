@@ -505,4 +505,17 @@
 //   return Math.max(...LongLineList) * Math.max(...shortLineList);
 // }
 // #endregion
+
+// #region - Lv1 - K번째수
+// function solution(array, commands) {
+//   return commands.reduce(
+//     (acc, [start, end, target]) => [
+//       ...acc,
+//       array.slice(start - 1, end).sort((a, b) => a - b)[target - 1],
+//     ],
+//     []
+//   );
+// }
+// #endregion
+
 // #endregion
