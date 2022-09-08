@@ -648,4 +648,19 @@
 //   return students.filter((student) => student).length - 1;
 // }
 // #endregion
+
+// #region - Lv1 - 완주하지 못한 선수
+// function solution(participant, completion) {
+//   const participantObj = participant.reduce((acc, cur) => {
+//     acc[cur] = (acc[cur] || 0) + 1;
+//     return acc;
+//   }, {});
+
+//   completion.forEach((complete) => (participantObj[complete] -= 1));
+
+//   for (const person in participantObj) {
+//     if (participantObj[person]) return person;
+//   }
+// }
+// #endregion
 // #endregion
