@@ -801,4 +801,28 @@
 // }
 // #endregion
 
+// #region - Lv1 - 신고 결과 받기
+// function solution(id_list, report, k) {
+//   // 중복 신고 Set으로 삭제 및 [신고한 사람, 신고당한 사람]
+//   const reportList = [...new Set(report)].map((tmp) => tmp.split(" "));
+
+//   // 신고 당한 사람 누적
+//   const prosecutorList = new Map();
+//   for (const [_, from] of reportList) {
+//     prosecutorList.set(from, prosecutorList.get(from) + 1 || 1);
+//   }
+
+//   // 신고당한 사람 k보다 높으면 신고자에게 메일 누적
+//   const accuseList = new Map();
+//   for (const [to, from] of reportList) {
+//     if (prosecutorList.get(from) >= k) {
+//       accuseList.set(to, accuseList.get(to) + 1 || 1);
+//     }
+//   }
+
+//   // 유저 리스트 기반으로 메일 발송 배열 리턴
+//   return id_list.map((user) => accuseList.get(user) || 0);
+// }
+// #endregion
+
 // #endregion
