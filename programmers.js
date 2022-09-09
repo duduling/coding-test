@@ -765,4 +765,19 @@
 // }
 // #endregion
 
+// #region - Lv1 - 신규  아이디 추천
+// function solution(new_id) {
+//   let answer = new_id
+//     .toLowerCase() // 소문자로 변환
+//     .replace(/[^\w-.]/g, "") // \w 숫자 문자 언더바 - 대쉬 . 점
+//     .replace(/\.+/g, ".") // 연속된 .
+//     .replace(/^\.|\.$/g, "") // 제일 앞에 || 제일 뒤에 .
+//     .replace(/^$/, "a"); // 공백이면 a 넣어주기
+
+//   return answer.length < 3
+//     ? answer.padEnd(3, answer.at(-1))
+//     : answer.slice(0, 15).replace(/\.$/, "");
+// }
+// #endregion
+
 // #endregion
