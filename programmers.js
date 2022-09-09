@@ -739,4 +739,30 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Lv1 - 크레인 인형뽑기 게임
+// function solution(board, moves) {
+//   let answer = 0;
+//   const stack = [];
+
+//   for (let i = 0; i < moves.length; i++) {
+//     const y = moves[i] - 1;
+
+//     for (let j = 0; j < board.length; j++) {
+//       if (board[j][y]) {
+//         const catchDoll = board[j][y];
+//         board[j][y] = 0;
+
+//         if (catchDoll === stack.at(-1)) {
+//           stack.pop();
+//           answer += 2;
+//         } else stack.push(catchDoll);
+//         break;
+//       }
+//     }
+//   }
+//   return answer;
+// }
+// #endregion
+
 // #endregion
