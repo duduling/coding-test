@@ -535,7 +535,7 @@
 
 //   return Number(
 //     s.replace(
-//       /zero|one|two|three|four|five|six|seven|eight|nine/g,
+//       new RegExp(Object.keys(NUMBER_TABLE).join("|"), "g"),
 //       (str) => NUMBER_TABLE[str]
 //     )
 //   );
@@ -775,8 +775,8 @@
 //     .replace(/^$/, "a"); // 공백이면 a 넣어주기
 
 //   return answer.length < 3
-//     ? answer.padEnd(3, answer.at(-1))
-//     : answer.slice(0, 15).replace(/\.$/, "");
+//     ? answer.padEnd(3, answer.at(-1)) // 3번째자리까지 마지막 문자로 채우기
+//     : answer.slice(0, 15).replace(/\.$/, ""); // 15자리까지 자른 뒤에 제일 뒤에 점이 있는지 확인
 // }
 // #endregion
 
@@ -823,6 +823,20 @@
 //   // 유저 리스트 기반으로 메일 발송 배열 리턴
 //   return id_list.map((user) => accuseList.get(user) || 0);
 // }
+// #endregion
+
+// #endregion
+
+// #region - Level 2
+
+// #region - Lv2 -
+// #endregion
+
+// #endregion
+
+// #region - Level 3
+
+// #region - Lv3 -
 // #endregion
 
 // #endregion
