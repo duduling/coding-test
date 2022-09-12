@@ -893,13 +893,12 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Lv2 - 루시와 엘라 찾기
+// SELECT ANIMAL_ID, NAME, SEX_UPON_INTAKE FROM ANIMAL_INS WHERE NAME = "Lucy" OR NAME = "Ella" OR NAME = "Pickle" OR NAME = "Rogan" OR NAME = "Sabrina" OR NAME = "Mitty" ORDER BY ANIMAL_ID ASC
 // #endregion
 
 // #endregion
 
-// #region - Level 3
-
-// #region - Lv3 -
-// #endregion
-
+// #region - Level 3 -
 // #endregion
