@@ -861,6 +861,10 @@
 // SELECT ANIMAL_ID, NAME, CASE SEX_UPON_INTAKE WHEN "Neutered Male" THEN 'O' WHEN"Spayed Female" THEN 'O' ELSE 'X' END AS 중성화 FROM ANIMAL_INS ORDER BY ANIMAL_ID ASC
 // #endregion
 
+// #region - Lv2 - 고양이와 개는 몇 마리 있을까
+// SELECT ANIMAL_TYPE, COUNT(ANIMAL_TYPE) count FROM ANIMAL_INS GROUP BY ANIMAL_TYPE ORDER BY ANIMAL_TYPE ASC
+// #endregion
+
 // #endregion
 
 // #endregion
