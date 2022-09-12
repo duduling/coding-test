@@ -1495,7 +1495,7 @@
 //     Array(n + 1).fill(0)
 //   );
 //   const checkArr = Array.from({ length: n + 1 }, () => 0);
-//   multipulArr.forEach(([x, y]) => (graphArr[x][y] = 1));
+//   multipleArr.forEach(([x, y]) => (graphArr[x][y] = 1));
 
 //   (function DFS(v: number): void {
 //     if (v === n) answer++;
