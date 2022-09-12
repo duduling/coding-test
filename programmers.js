@@ -857,6 +857,10 @@
 // SELECT ANIMAL_ID, NAME, DATE_FORMAT(DATETIME,'%Y-%m-%d') AS 날짜 FROM ANIMAL_INS ORDER BY ANIMAL_ID ASC
 // #endregion
 
+// #region - Lv2 - 중성화 여부 파악하기
+// SELECT ANIMAL_ID, NAME, CASE SEX_UPON_INTAKE WHEN "Neutered Male" THEN 'O' WHEN"Spayed Female" THEN 'O' ELSE 'X' END AS 중성화 FROM ANIMAL_INS ORDER BY ANIMAL_ID ASC
+// #endregion
+
 // #endregion
 
 // #endregion
