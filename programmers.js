@@ -829,6 +829,9 @@
 
 // #region - Level 2
 
+// #region - Lv2 - 동물 수 구하기
+// SELECT COUNT(ANIMAL_ID) AS count from ANIMAL_INS
+// #endregion
 // #region - Lv2 -
 // #endregion
 
