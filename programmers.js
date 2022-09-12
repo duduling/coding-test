@@ -849,6 +849,10 @@
 // SELECT NAME, COUNT(NAME) AS COUNT FROM ANIMAL_INS GROUP BY NAME HAVING 1 < COUNT AND NAME IS NOT NULL ORDER BY NAME ASC
 // #endregion
 
+// #region - Lv2 - NULL 처리하기
+// SELECT ANIMAL_TYPE, IFNULL(NAME, 'No name'), SEX_UPON_INTAKE FROM ANIMAL_INS
+// #endregion
+
 // #endregion
 
 // #endregion
