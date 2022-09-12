@@ -836,6 +836,10 @@
 // #region - Lv2 - 중복 제거하기
 // SELECT count(DISTINCT NAME) AS count from ANIMAL_INS
 // #endregion
+
+// #region - Lv2 - 최솟값 구하기
+// SELECT DATETIME from ANIMAL_INS ORDER BY DATETIME ASC LIMIT 1
+// #endregion
 // #endregion
 
 // #endregion
