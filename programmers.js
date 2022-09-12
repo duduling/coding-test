@@ -877,6 +877,22 @@
 // }
 // #endregion
 
+// #region - Lv2 - 이진 변환 반복하기
+// function solution(s) {
+//   let answer = [0, 0];
+
+//   let tmp = s;
+//   while (tmp !== "1") {
+//     console.log(tmp);
+//     const curLengthNum = Number(tmp.match(/[^0]/g).join("").length);
+
+//     answer = [++answer[0], answer[1] + (tmp.length - curLengthNum)];
+//     tmp = curLengthNum.toString(2);
+//   }
+
+//   return answer;
+// }
+// #endregion
 // #endregion
 
 // #endregion
