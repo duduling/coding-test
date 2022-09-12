@@ -869,6 +869,14 @@
 // SELECT HOUR(DATETIME) AS HOUR, COUNT(HOUR) AS COUNT FROM ANIMAL_OUTS WHERE 9 <= HOUR(DATETIME) AND HOUR(DATETIME) < 20 GROUP BY HOUR(DATETIME) ORDER BY HOUR ASC
 // #endregion
 
+// #region - Lv2 - 최댓값과 최솟값
+// function solution(s) {
+//   const sList = s.split(" ");
+
+//   return `${Math.min(...sList)} ${Math.max(...sList)}`;
+// }
+// #endregion
+
 // #endregion
 
 // #endregion
