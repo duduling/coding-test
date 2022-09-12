@@ -845,6 +845,10 @@
 // SELECT ANIMAL_ID, NAME FROM ANIMAL_INS WHERE ANIMAL_TYPE = 'Dog' AND NAME LIKE '%el%' ORDER BY NAME ASC
 // #endregion
 
+// #region - Lv2 - 동명 동물 수 찾기
+// SELECT NAME, COUNT(NAME) AS COUNT FROM ANIMAL_INS GROUP BY NAME HAVING 1 < COUNT AND NAME IS NOT NULL ORDER BY NAME ASC
+// #endregion
+
 // #endregion
 
 // #endregion
