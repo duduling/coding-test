@@ -898,6 +898,12 @@
 // SELECT ANIMAL_ID, NAME, SEX_UPON_INTAKE FROM ANIMAL_INS WHERE NAME = "Lucy" OR NAME = "Ella" OR NAME = "Pickle" OR NAME = "Rogan" OR NAME = "Sabrina" OR NAME = "Mitty" ORDER BY ANIMAL_ID ASC
 // #endregion
 
+// #region - Lv2 - JadenCase 문자열 만들기
+// function solution(s) {
+//   return s.toLowerCase().replaceAll(/\b[a-z]/g, (char) => char.toUpperCase());
+// }
+// #endregion
+
 // #endregion
 
 // #region - Level 3 -
