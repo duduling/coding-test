@@ -985,5 +985,19 @@
 // }
 // #endregion
 
+// #region - Lv2 - 카펫
+// function solution(brown, yellow) {
+//   const area = brown + yellow;
+
+//   for (let x = area; Math.sqrt(area) <= x; x--) {
+//     if (area % x === 0) {
+//       const y = area / x;
+
+//       if ((x - 2) * (y - 2) === yellow) return [x, y];
+//     }
+//   }
+// }
+// #endregion
+
 // #region - Level 3 -
 // #endregion
