@@ -965,5 +965,25 @@
 // }
 // #endregion
 
+// #region - Lv2 - 영어 끝말잇기
+// function solution(n, words) {
+//   let answer = [0, 0];
+//   const cache = new Set();
+//   cache.add(words[0]);
+
+//   for (let i = 1; i < words.length; i++) {
+//     const preWord = words[i - 1];
+//     const curWord = words[i];
+
+//     if (preWord[preWord.length - 1] !== curWord[0] || cache.has(curWord)) {
+//       answer = [(i % n) + 1, Math.floor(i / n) + 1];
+//       break;
+//     } else cache.add(curWord);
+//   }
+
+//   return answer;
+// }
+// #endregion
+
 // #region - Level 3 -
 // #endregion
