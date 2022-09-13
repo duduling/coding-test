@@ -999,5 +999,20 @@
 // }
 // #endregion
 
+// #region - Lv2 - 구명보트
+// function solution(people, limit) {
+//   let boatCnt = 0;
+
+//   people.sort((a, b) => b - a);
+
+//   for (let i = 0; i < people.length; i++) {
+//     if (people[i] + people.at(-1) <= limit) people.pop();
+//     boatCnt++;
+//   }
+
+//   return boatCnt;
+// }
+// #endregion
+
 // #region - Level 3 -
 // #endregion
