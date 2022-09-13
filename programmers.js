@@ -1014,5 +1014,17 @@
 // }
 // #endregion
 
+// #region - Lv2 - 멀리뛰기
+// function solution(n) {
+//   const DP = Array(n + 1).fill(1);
+
+//   for (let i = 2; i < DP.length; i++) {
+//     DP[i] = (DP[i - 2] + DP[i - 1]) % 1234567;
+//   }
+
+//   return DP[n];
+// }
+// #endregion
+
 // #region - Level 3 -
 // #endregion
