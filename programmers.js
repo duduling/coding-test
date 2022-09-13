@@ -1026,5 +1026,15 @@
 // }
 // #endregion
 
+// #region - Lv2 - N개의 최소공배수
+// const getGCD = (a, b) => (a % b ? getGCD(b, a % b) : b);
+
+// function solution(arr) {
+//   return arr.reduce((acc, cur) => (acc * cur) / getGCD(acc, cur), 1);
+// }
+// 최소 공배수 구하는 법 => a * b / 최대 공약수 (유클리드 호재법) => a % b = c => b % c => 0이 나오면 종료
+// console.log(solution([2, 6, 8, 14]));
+// #endregion
+
 // #region - Level 3 -
 // #endregion
