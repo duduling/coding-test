@@ -913,5 +913,20 @@
 // }
 // #endregion
 
+// #region - Lv2 - 올바른 괄호
+// function solution(s) {
+//   const answer = [];
+
+//   for (let i = 0; i < s.length; i++) {
+//     const bracket = s[i];
+
+//     if (bracket === ")" && answer.at(-1) === "(") answer.pop();
+//     else answer.push(bracket);
+//   }
+
+//   return !answer.length;
+// }
+// #endregion
+
 // #region - Level 3 -
 // #endregion
