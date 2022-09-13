@@ -928,5 +928,18 @@
 // }
 // #endregion
 
+// #region - Lv2 - 숫자의 표현
+// function solution(n) {
+//   let answer = 0;
+
+//   for (let i = 1; i <= n; i += 2) {
+//     if (n % i === 0) answer++;
+//   }
+
+//   return answer;
+// }
+// 연속된 숫자의 합은 해당 수의 약수를 알면 알 수 있다.
+// #endregion
+
 // #region - Level 3 -
 // #endregion
