@@ -941,5 +941,17 @@
 // 연속된 숫자의 합은 해당 수의 약수를 알면 알 수 있다.
 // #endregion
 
+// #region - Lv2 - 피보나치 수
+// function solution(n) {
+//   const DP = [0, 1, 1, 2, 3, 5];
+
+//   for (let i = 6; i <= n; i++) {
+//     DP[i] = (DP[i - 2] + DP[i - 1]) % 1234567;
+//   }
+
+//   return DP[n];
+// }
+// #endregion
+
 // #region - Level 3 -
 // #endregion
