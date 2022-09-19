@@ -1101,5 +1101,31 @@
 // 행렬 곱하기 -> https://www.youtube.com/watch?v=JpSe38UHaos
 // #endregion
 
+// #region - Lv2 - 괄호 회전하기
+// function solution(s) {
+//   const MATCH_BRACKET = {
+//     ")": "(",
+//     "}": "{",
+//     "]": "[",
+//   };
+//   start: for (let i = 0; i < s.length; i++) {
+//     let count = 0;
+//     const stack = [];
+
+//     if (s[i] === ")" || s[i] === "}" || s[i] === "]") continue start;
+
+//     for (let j = 0; j < s.length; j++) {
+//       const curBracket = s[(j + i) % s.length];
+//       if (MATCH_BRACKET[curBracket]) {
+//         if (stack.pop() !== MATCH_BRACKET[curBracket]) continue start;
+//         else if (stack.length === 0) count++;
+//       } else stack.push(curBracket);
+//     }
+//     return count;
+//   }
+
+//   return 0;
+// }
+// #endregion
 // #region - Level 3 -
 // #endregion
