@@ -1127,5 +1127,15 @@
 //   return 0;
 // }
 // #endregion
+
+// #region - Lv2 - H-Index
+// function solution(citations) {
+//   citations.sort((a, b) => b - a);
+
+//   for (let i = 0; i <= citations.length; i++) {
+//     if ((citations[i] || 0) <= i) return i;
+//   }
+// }
+// #endregion
 // #region - Level 3 -
 // #endregion
