@@ -1049,5 +1049,31 @@
 //   return answer;
 // }
 // #endregion
+
+// #region - Lv2 - [1차] 캐시
+// function solution(cacheSize, cities) {
+//   if (cacheSize === 0) return cities.length * 5;
+
+//   let answer = 0;
+//   const cacheArr = [];
+
+//   for (let i = 0; i < cities.length; i++) {
+//     const city = cities[i].toLowerCase();
+//     const targetIdx = cacheArr.indexOf(city);
+
+//     if (-1 < targetIdx) {
+//       cacheArr.splice(targetIdx, 1);
+//       cacheArr.unshift(city);
+//       answer += 1;
+//     } else {
+//       if (cacheSize <= cacheArr.length) cacheArr.pop();
+//       cacheArr.unshift(city);
+//       answer += 5;
+//     }
+//   }
+//   return answer;
+// }
+// LRU 알고리즘 (Least Recently Used Algorithm) - 가장 오랫동안 참조되지 않은 페이지를 교체하는 기법
+//#endregion
 // #region - Level 3 -
 // #endregion
