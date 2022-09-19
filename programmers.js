@@ -1138,4 +1138,23 @@
 // }
 // #endregion
 // #region - Level 3 -
+
+// #region - Level 3 - 도둑질
+// const solution = (money) => {
+//   // 첫번째 집 가고 마지막 집 안 가고
+//   const DP1 = Array(money.length - 1).fill(0);
+//   for (let i = 0; i < money.length - 1; i++) {
+//     DP1[i] = Math.max((DP1[i - 2] || 0) + money[i], DP1[i - 1] || 0);
+//   }
+
+//   // 첫번째 집 안 가고 마지막 집 가고
+//   const DP2 = Array(money.length).fill(0);
+//   for (let i = 1; i < money.length; i++) {
+//     DP2[i] = Math.max((DP2[i - 2] || 0) + money[i], DP2[i - 1] || 0);
+//   }
+
+//   return Math.max(...DP1, ...DP2);
+// };
+// #endregion
+
 // #endregion
