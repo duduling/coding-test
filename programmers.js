@@ -1075,5 +1075,12 @@
 // }
 // LRU 알고리즘 (Least Recently Used Algorithm) - 가장 오랫동안 참조되지 않은 페이지를 교체하는 기법
 //#endregion
+
+// #region - Lv2 - 점프와 순간 이동
+// function solution(n) {
+//   return n.toString(2).match(/1/g).length;
+// }
+// #endregion
+
 // #region - Level 3 -
 // #endregion
