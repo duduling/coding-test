@@ -1,6 +1,8 @@
 {
-  "include": ["./*.ts"],
   "compilerOptions": {
-    "target": "esnext"
+    "noImplicitAny": true,
+    "removeComments": true,
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"]
   }
 }

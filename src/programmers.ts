@@ -1137,9 +1137,9 @@
 //   }
 // }
 // #endregion
-// #region - Level 3 -
+// #region - Level 3
 
-// #region - Level 3 - 도둑질
+// #region - Lv 3 - 도둑질
 // const solution = (money) => {
 //   // 첫번째 집 가고 마지막 집 안 가고
 //   const DP1 = Array(money.length - 1).fill(0);
