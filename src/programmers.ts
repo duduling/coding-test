@@ -1153,6 +1153,31 @@
 // }
 // #endregion
 
+// #region - Lv2 - k진수에서 소수 개수 구하기
+// function solution(n: number, k: number) {
+//   const isPrimeNum = (num: number) => {
+//     if (num <= 1) return false;
+//     if (num === 2 || num === 3) return true;
+
+//     for (let j = 2; j <= Math.sqrt(num); j++) {
+//       if (num % j === 0) return false;
+//     }
+//     return true;
+//   };
+
+//   let answer: number = 0;
+//   const splitList = n.toString(k).split("0");
+
+//   for (let i = 0; i < splitList.length; i++) {
+//     if (isPrimeNum(Number(splitList[i]))) answer++;
+//   }
+
+//   return answer;
+// }
+// #endregion
+
+// #endregion
+
 // #region - Level 3
 
 // #region - Lv 3 - 도둑질
