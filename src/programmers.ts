@@ -1137,6 +1137,22 @@
 //   }
 // }
 // #endregion
+
+// #region - Lv2 - 튜플
+// function solution(s: string): number[] {
+//   return [
+//     ...s
+//       .replace(/{|}/g, "")
+//       .split(",")
+//       .reduce((acc: Map<string, number>, cur: string): Map<string, number> => {
+//         return acc.set(cur, (acc.get(cur) || 0) + 1);
+//       }, new Map()),
+//   ]
+//     .sort((a, b) => b[1] - a[1])
+//     .map(([key]) => Number(key));
+// }
+// #endregion
+
 // #region - Level 3
 
 // #region - Lv 3 - 도둑질
