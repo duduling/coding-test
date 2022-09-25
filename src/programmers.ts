@@ -1176,6 +1176,38 @@
 // }
 // #endregion
 
+// #region - Lv2 - 게임 맵 최단거리
+// function solution(maps: number[][]) {
+//   const directionList = [
+//     [0, 1],
+//     [0, -1],
+//     [-1, 0],
+//     [1, 0],
+//   ];
+//   const [m, n] = [maps.length - 1, maps[0].length - 1];
+//   const queue = [[0, 0, 0]];
+
+//   while (queue.length) {
+//     let [x, y, cnt] = queue.shift();
+//     cnt++;
+
+//     if (x === m && y === n) return cnt;
+
+//     for (let i = 0; i < 4; i++) {
+//       const tmpX = x + directionList[i][0];
+//       const tmpY = y + directionList[i][1];
+
+//       if (maps?.[tmpX]?.[tmpY] === 1) {
+//         maps[tmpX][tmpY] = 0;
+//         queue.push([tmpX, tmpY, cnt]);
+//       }
+//     }
+//   }
+
+//   return -1;
+// }
+// #endregion
+
 // #endregion
 
 // #region - Level 3
