@@ -1208,6 +1208,35 @@
 // }
 // #endregion
 
+// #region - Lv2 - 모음사전
+// function solution(word: string) {
+//   const WORD_IDX: {
+//     [key: string]: number;
+//   } = {
+//     A: 0,
+//     E: 1,
+//     I: 2,
+//     O: 3,
+//     U: 4,
+//   };
+//   const n = Object.keys(WORD_IDX).length;
+//   const WORD_TABLE: number[] = Array(n).fill(1);
+
+//   for (let i = WORD_TABLE.length - 2; 0 <= i; i--) {
+//     WORD_TABLE[i] = WORD_TABLE[i + 1] * n + 1;
+//   }
+
+//   return (
+//     word
+//       .split("")
+//       .reduce(
+//         (acc, cur, idx): number => acc + WORD_IDX[cur] * WORD_TABLE[idx],
+//         0
+//       ) + word.length
+//   );
+// }
+// #endregion
+
 // #endregion
 
 // #region - Level 3
