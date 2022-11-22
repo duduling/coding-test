@@ -5,10 +5,10 @@
 // const input = `${require("fs").readFileSync("/dev/stdin")}`.trim().split(" "); // [" " | "\n"]
 
 // My Code
-function solution() {
-  // Initial Setting
+// function solution() {
+//   // Initial Setting
 
-  // Logic
-  console.log(new Date().toISOString().split("T")[0]);
-}
-solution();
+//   // Logic
+//   console.log(new Date().toISOString().split("T")[0]);
+// }
+// solution();
