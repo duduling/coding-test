@@ -12,7 +12,6 @@ const solution = (input: string[]) => {
   // Logic
   const DP: number[] = new Array(n + 1).fill(0);
 
-  DP[0] = 0;
   DP[1] = 1;
   DP[2] = 3;
 
