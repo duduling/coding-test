@@ -6,8 +6,7 @@ export const input = `7
 1 5
 5 2
 5 6
-4 7
-`
+4 7`
   .trim()
   .split("\n"); // [" " | "\n"]
 
@@ -17,34 +16,35 @@ export const input = `7
 // My Code
 const solution = (input: string[]) => {
   // Initial Setting
-  const n: number = +input.shift();
-  const m: number = +input.shift();
+  const [n, m, ...computers] = input;
 
   // Logic
-  const answer: boolean[] = new Array(n + 1).fill(false);
-  const virusLinkList: number[][] = Array.from({ length: n + 1 }, () => []);
+  let answer = 0;
+  const ways: number[][] = Array.from({ length: +n + 1 }, () => []);
+  const visited: boolean[] = Array.from({ length: +n + 1 }, () => false);
 
-  for (let i = 0; i < m; i += 1) {
-    const [a, b]: number[] = input[i].split(" ").map(Number);
-    virusLinkList[a].push(b);
-    virusLinkList[b].push(a);
+  for (let i = 0; i < +m; i += 1) {
+    const [from, to] = computers[i].split(" ").map(Number);
+
+    ways[from].push(to);
+    ways[to].push(from);
   }
 
-  const queue: number[][] = [virusLinkList[1]];
+  const BFS = (startComputer: number) => {
+    const queue = [startComputer];
+    while (queue.length) {
+      const curComputer = queue.shift();
 
-  while (queue.length) {
-    const curList: number[] = queue.shift();
-
-    for (let j = 0; j < curList.length; j += 1) {
-      const curNetwork: number = curList[j];
-
-      if (!answer[curNetwork]) {
-        queue.push(virusLinkList[curNetwork]);
-        answer[curNetwork] = true;
+      if (!visited[curComputer]) {
+        answer += 1;
+        queue.push(...ways[curComputer]);
+        visited[curComputer] = true;
       }
     }
-  }
+  };
 
-  return answer.filter((val) => val).length - 1;
+  BFS(1);
+
+  return answer - 1;
 };
 console.log(solution(input));
