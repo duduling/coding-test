@@ -16,6 +16,7 @@ const solution = (input: string[]) => {
 
   for (let i = 0; i < input.length - 1; i += 1) {
     const numList: number[] = input[i].split(" ").map(Number);
+
     const minNum: number = Math.min(...numList);
     const maxNum: number = Math.max(...numList);
 
