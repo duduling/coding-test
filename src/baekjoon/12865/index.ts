@@ -19,7 +19,7 @@ const solution = (input: string[]) => {
 
   // Logic
   const [N, K]: number[] = convertInput[0];
-  const dp: number[][] = Array.from({ length: N + 1 }, () =>
+  const DP: number[][] = Array.from({ length: N + 1 }, () =>
     Array.from({ length: K + 1 }, () => 0)
   );
 
@@ -27,14 +27,14 @@ const solution = (input: string[]) => {
     const [W, V] = convertInput[i];
 
     for (let j = 1; j <= K; j += 1) {
+      DP[i][j] = DP[i - 1][j];
+
       if (W <= j) {
-        dp[i][j] = Math.max(dp[i - 1][j - W] + V, dp[i - 1][j]);
-      } else {
-        dp[i][j] = dp[i - 1][j];
+        DP[i][j] = Math.max(DP[i][j], DP[i - 1][j - W] + V);
       }
     }
   }
 
-  return dp[N][K];
+  return DP[N][K];
 };
 console.log(solution(input));
