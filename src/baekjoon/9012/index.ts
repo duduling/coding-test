@@ -7,7 +7,7 @@ export const input = `6
 ()()()()(()()())()
 (()((())()(`
   .trim()
-  .split("\n"); // [" " | "\n"]
+  .split('\n'); // [" " | "\n"]
 
 // For Submit
 // const input = `${require("fs").readFileSync("/dev/stdin")}`.trim().split("\n"); // " " | "\n"]
@@ -18,23 +18,25 @@ const solution = (input: string[]) => {
   const n: number = +input[0];
 
   // Logic
-  for (let i = 1; i <= n; i += 1) {
-    const parenthesisString: string = input[i];
-    let cnt: number = 0;
+  const answer: string[] = [];
 
-    for (let l = 0; l < parenthesisString.length; l += 1) {
-      const curParenthesis = parenthesisString[l];
+  for (let i = 1; i <= n; i++) {
+    let stackCnt: number = 0;
+    const questionStr: string = input[i];
 
-      if (curParenthesis === "(") {
-        cnt += 1;
-      } else if (curParenthesis === ")") {
-        cnt -= 1;
+    for (let l = 0; l < questionStr.length; l++) {
+      if (questionStr[l] === '(') {
+        stackCnt += 1;
+      } else {
+        stackCnt -= 1;
+
+        if (stackCnt < 0) break;
       }
-
-      if (cnt < 0) break;
     }
 
-    console.log(cnt === 0 ? "YES" : "NO");
+    answer.push(stackCnt === 0 ? 'YES' : 'NO');
   }
+
+  console.log(answer.join('\n'));
 };
 solution(input);

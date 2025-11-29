@@ -1,57 +1,45 @@
 // For Test with Example
-export const input = `4 6
-101111
-101010
-101011
-111011`
-  .trim()
-  .split("\n"); // [" " | "\n"]
+// export const input = `4 6
+// 110110
+// 110110
+// 111111
+// 111101`
+//   .trim()
+//   .split('\n'); // [" " | "\n"]
 
 // For Submit
 // const input = `${require("fs").readFileSync("/dev/stdin")}`.trim().split("\n"); // " " | "\n"]
 
 // My Code
-const waysList: number[][] = [
-  [0, 1],
-  [-1, 0],
-  [0, -1],
-  [1, 0],
-];
-const solution = (input: string[]) => {
-  // Initial Setting
-  const [H, W]: number[] = input
-    .shift()
-    .split(" ")
-    .map((str: string) => +str - 1);
+// const waysList: number[][] = [
+//   [0, 1],
+//   [-1, 0],
+//   [0, -1],
+//   [1, 0],
+// ];
+// const solution = (input: string[]) => {
+//   // Initial Setting
+//   const [H, W] = input.shift().split(' ').map(Number);
 
-  // Logic
-  let coordinateMap: number[][] = input.map((str: string) =>
-    str.split("").map(Number)
-  );
-  let visited: number[][] = Array.from(Array(H + 1), () =>
-    Array(W + 1).fill(-1)
-  );
+//   // Logic
+//   const loadMap: number[][] = input.map((row) => row.split('').map(Number));
+//   const queue: number[][] = [[0, 0, 1]];
+//   loadMap[0][0] = 0;
 
-  visited[0][0] = 1;
+//   while (queue.length > 0) {
+//     const [y, x, distance] = queue.shift();
 
-  const queue: number[][] = [[0, 0]];
-  while (0 < queue.length) {
-    const [h, w]: number[] = queue.shift();
+//     if (y === H - 1 && x === W - 1) return distance;
 
-    for (let i = 0; i < 4; i += 1) {
-      const [moveW, moveH]: number[] = waysList[i];
+//     waysList.forEach(([moveY, moveX]) => {
+//       moveY += y;
+//       moveX += x;
 
-      const nextW = w + moveW;
-      const nextH = h + moveH;
-
-      if (nextW < 0 || nextH < 0 || W < nextW || H < nextH) continue;
-      if (visited[nextH][nextW] === -1 && coordinateMap[nextH][nextW] === 1) {
-        visited[nextH][nextW] = visited[h][w] + 1;
-        queue.push([nextH, nextW]);
-      }
-    }
-  }
-
-  return visited[H][W];
-};
-console.log(solution(input));
+//       if (loadMap?.[moveY]?.[moveX] === 1) {
+//         loadMap[moveY][moveX] = 0;
+//         queue.push([moveY, moveX, distance + 1]);
+//       }
+//     });
+//   }
+// };
+// console.log(solution(input));

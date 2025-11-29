@@ -2,7 +2,7 @@
 export const input = `5
 3 1 4 3 2`
   .trim()
-  .split("\n"); // [" " | "\n"]
+  .split('\n'); // [" " | "\n"]
 
 // For Submit
 // const input = `${require("fs").readFileSync("/dev/stdin")}`.trim().split("\n"); // " " | "\n"]
@@ -13,7 +13,7 @@ const solution = (input: string[]) => {
   let n: number = +input[0];
 
   // Logic
-  const waitList: number[] = input[1].split(" ").map(Number);
+  const waitList: number[] = input[1].split(' ').map(Number);
 
   waitList.sort((a: number, b: number) => a - b);
 

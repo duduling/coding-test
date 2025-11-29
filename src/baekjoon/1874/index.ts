@@ -8,7 +8,7 @@
 // 5
 // 2
 // 1`;
-// const input = tmp.trim().split("\n"); // [" " | "\n"]
+// const input = tmp.trim().split('\n'); // [" " | "\n"]
 
 // For Submit
 // const input = `${require("fs").readFileSync("/dev/stdin")}`.trim().split("\n"); // " " | "\n"]
@@ -19,26 +19,25 @@
 //   const n = +input.shift();
 
 //   // Logic
+//   const answer: string[] = [];
+
+//   const stack: number[] = [];
 //   let curNum: number = 1;
 
-//   const tmpStack: number[] = [];
-//   let answer: string = "";
+//   for (let i = 0; i < n; i += 1) {
+//     const targetNum: number = +input[i];
 
-//   for (let i = 0; i < n; i++) {
-//     const tmpNum: number = +input[i];
-
-//     while (curNum <= tmpNum) {
-//       tmpStack.push(curNum);
-//       curNum++;
-//       answer += "+\n";
+//     while (curNum <= targetNum) {
+//       stack.push(curNum);
+//       curNum += 1;
+//       answer.push('+');
 //     }
 
-//     if (tmpStack.pop() !== tmpNum) {
-//       return console.log("NO");
+//     if (stack.pop() !== targetNum) {
+//       console.log('NO');
 //     }
-
-//     answer += "-\n";
 //   }
-//   console.log(answer);
+
+//   console.log(answer.join('\n'));
 // }
 // solution(input);

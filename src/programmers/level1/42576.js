@@ -1,12 +1,26 @@
 function solution(participant, completion) {
-  const answer = new Map();
+  const completionObj = completion.reduce((acc, cur) => {
+    acc[cur] = (acc[cur] ?? 0) + 1;
+    return acc;
+  }, {});
 
-  for (let i = 0; i < participant.length; i++) {
-    answer.set(participant[i], (answer.get(participant[i]) || 0) + 1);
-    answer.set(completion[i], (answer.get(completion[i]) || 0) - 1);
-  }
-
-  for (const [person, goal] of answer) {
-    if (goal) return person;
-  }
+  return participant.find((player) => {
+    if (completionObj[player] > 0) {
+      completionObj[player] -= 1;
+      return false;
+    }
+    return true;
+  });
 }
+
+solution(['leo', 'kiki', 'eden'], ['eden', 'kiki'], 'leo');
+solution(
+  ['marina', 'josipa', 'nikola', 'vinko', 'filipa'],
+  ['josipa', 'filipa', 'marina', 'nikola'],
+  'vinko'
+);
+solution(
+  ['mislav', 'stanko', 'mislav', 'ana'],
+  ['stanko', 'ana', 'mislav'],
+  'mislav'
+);

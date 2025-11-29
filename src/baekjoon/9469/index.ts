@@ -1,5 +1,5 @@
 // For Test with Example
-const input = `5
+export const input = `5
 1 250 10 15 20
 2 10.7 3.5 4.7 5.5
 3 523.7 15.3 20.7 33.3
