@@ -1,37 +1,30 @@
 // For Test with Example
-export const input = `1
-10
-0 1 2 3 4 5 6 7 8 9`
+export const input = `500000
+8
+0 2 3 4 6 7 8 9`
   .trim()
-  .split("\n"); // [' ' | '\n']
+  .split('\n'); // [" " | "\n"]
 
 // For Submit
-// const input = `${require("fs").readFileSync("/dev/stdin")}`.trim().split("\n"); // ' ' | '\n']
+// const input = `${require("fs").readFileSync("/dev/stdin")}`.trim().split("\n"); // " " | "\n"]
 
 // My Code
 const solution = (input: string[]) => {
   // Initial Setting
-  const n: number = +input[0];
+  const goalChannel = +input[0];
+  const brokenButtons: Set<string> = new Set(input[2]?.split(' ') || []);
 
   // Logic
-  const brokenButtons: Set<string> = new Set(input[2]?.split(" ") || []);
-  let answer: number = Math.abs(n - 100);
+  let answer = Math.abs(goalChannel - 100);
+  const maxChannel = 500000 * 2;
 
-  for (let i = 0; i <= 999893; i++) {
-    const possible = i.toString();
-    let flag = true;
+  for (let ch = 0; ch < maxChannel; ch += 1) {
+    const chArr = ch.toString().split('');
+    if (chArr.some((char) => brokenButtons.has(char))) continue;
 
-    for (let j = 0; j < possible.length; j++) {
-      if (brokenButtons.has(possible[j])) {
-        flag = false;
-        break;
-      }
-    }
-
-    if (flag) {
-      answer = Math.min(answer, Math.abs(n - i) + possible.length);
-    }
+    answer = Math.min(answer, chArr.length + Math.abs(goalChannel - ch));
   }
-  console.log(answer);
+
+  return answer;
 };
-solution(input);
+console.log(solution(input));
