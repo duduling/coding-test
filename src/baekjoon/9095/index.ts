@@ -26,6 +26,6 @@ const solution = (input: string[]) => {
 
       return cntList[n];
     })
-    .join(" ");
+    .join("\n");
 };
 console.log(solution(input));
